@@ -1,0 +1,97 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram name="Page-1" id="Ie6zT4B1BSGbGUJqss4R">
+    <mxGraphModel dx="592" dy="346" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rFgAc_8jc134F_3OrzTS-11" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="393" y="140" width="65" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-1" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="rFgAc_8jc134F_3OrzTS-11" vertex="1">
+          <mxGeometry width="65" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-2" value="Database" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.mongodb" parent="rFgAc_8jc134F_3OrzTS-11" vertex="1">
+          <mxGeometry x="21.666666666666686" y="20" width="21.666666666666668" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-16" value="" style="group;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="380" y="450" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-13" value="&lt;span style=&quot;background-color: rgb(0, 0, 0);&quot;&gt;Bot&lt;/span&gt;" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/social-media-2104/24/social_media_social_media_logo_docker-128.png" parent="rFgAc_8jc134F_3OrzTS-16" vertex="1">
+          <mxGeometry x="11" width="69" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-15" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/social-media-2346/512/Discord-01-128.png" parent="rFgAc_8jc134F_3OrzTS-16" vertex="1">
+          <mxGeometry y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-14" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-128.png" parent="rFgAc_8jc134F_3OrzTS-16" vertex="1">
+          <mxGeometry x="60" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-18" value="" style="points=[[0.35,0,0],[0.98,0.51,0],[1,0.71,0],[0.67,1,0],[0,0.795,0],[0,0.65,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.user;fillColor=#005073;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="400" y="610" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-19" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=none;textShadow=0;fillColor=#d5e8d4;strokeColor=#00FF00;curved=0;jumpStyle=none;flowAnimation=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="450" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-20" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=none;textShadow=0;fillColor=#d5e8d4;strokeColor=#00FF00;curved=0;jumpStyle=none;flowAnimation=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-21" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=none;textShadow=0;fillColor=#d5e8d4;strokeColor=#00FF00;curved=0;jumpStyle=none;flowAnimation=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="610" as="sourcePoint" />
+            <mxPoint x="440" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-23" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=none;textShadow=0;fillColor=#d5e8d4;strokeColor=#FF0000;curved=0;jumpStyle=none;flowAnimation=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="380" as="sourcePoint" />
+            <mxPoint x="410" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-24" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=none;textShadow=0;fillColor=#d5e8d4;strokeColor=#FF0000;curved=0;jumpStyle=none;flowAnimation=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="540" as="sourcePoint" />
+            <mxPoint x="410" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-25" value="consider self-hosting mongo on docker as well" style="shape=note;size=20;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="120" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-22" value="" style="endArrow=classic;html=1;rounded=0;fontColor=default;labelBackgroundColor=none;textShadow=0;fillColor=#d5e8d4;strokeColor=#FF0000;curved=0;jumpStyle=none;flowAnimation=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="230" as="sourcePoint" />
+            <mxPoint x="410" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-26" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="391" y="290" width="79" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://img.icons8.com/color/512/express-js.png;" parent="rFgAc_8jc134F_3OrzTS-26" vertex="1">
+          <mxGeometry x="47" y="50" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-6" value="&lt;span style=&quot;background-color: rgb(0, 0, 0);&quot;&gt;API&lt;/span&gt;" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/social-media-2104/24/social_media_social_media_logo_docker-128.png" parent="rFgAc_8jc134F_3OrzTS-26" vertex="1">
+          <mxGeometry width="69" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-27" value="schema diagram" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="490" y="150" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-28" value="API diagram" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="490" y="300" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-29" value="Class diagram (responses)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="490" y="330" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-30" value="Command diagram" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="490" y="475" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rFgAc_8jc134F_3OrzTS-31" value="UI design" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="490" y="620" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
