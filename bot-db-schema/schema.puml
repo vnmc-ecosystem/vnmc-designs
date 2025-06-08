@@ -1,0 +1,221 @@
+@startuml db_schema
+
+package vnmc <<Database>> {
+	package tournaments {
+		abstract tournament_id as "_id" <<int32>> #a9dcdf
+		abstract year <<int32>>
+
+		abstract registration_prop as "registration" <<Registration[]>>
+		class Registration {
+			osu_id: <<PlayerId>>
+			time: <<Time[]>>
+		}
+		class Time {
+			start: <<int64>>
+			end: <<int64>>
+		}
+
+		abstract schedules <<Record<Event, Schedule>>>
+		class Schedule {
+			start: <<int64>>
+			end: <<int64>>
+		}
+		enum Event {
+			"registration"
+			"qual"
+			"ro32"
+			"ro16"
+			"qf"
+			"sf"
+			"f"
+			"gf"
+		}
+
+		abstract staff <<Record<Role, PlayerId[]>>
+		enum Role
+		note right of Role : add enum later
+
+		abstract mappool <<Record<Round, Map[] | NonQualifierPool>>>
+		class Map {
+			id: <<MapId>>
+			pattern <<string>>
+		}
+		<> diamond1
+		class NonQualifierPool <<Record<Category, Map[]>>
+		class MapId <<string>>
+		enum Round {
+			"qual"
+			"ro32"
+			"ro16"
+			"qf"
+			"sf"
+			"f"
+			"gf"
+		}
+		enum Category {
+			"RC"
+			"HB"
+			"LN"
+			"SV"
+			"TB"
+		}
+
+		abstract matches <<Record<Round, MatchId[] | NoBracketMatch | BracketMatch>>
+		<> diamond2
+		class NoBracketMatch <<Match[]>>
+		class BracketMatch <<Record<Bracket, Match[] | LegMatch>>>
+		<> diamond3
+		class LegMatch <<Record<Leg, Match[]>>
+		class Match {
+			match_id?: <<MatchId>>
+			player1_name: <<string>>
+			player1_id: <<PlayerId>>
+			player1_seed: <<int32>>
+			player1_score: <<int32>>
+			player2_name: <<string>>
+			player2_id: <<PlayerId>>
+			player2_seed: <<int32>>
+			player2_score: <<int32>>
+			match_time: <<int64>>
+			referee: <<PlayerId>>
+		}
+		class MatchId <<string>>
+		enum Bracket {
+			"winners"
+			"losers"
+		}
+		enum Leg {
+			"leg1"
+			"leg2"
+		}
+
+		abstract standings <<Record<Ranking, PlayerId[]>>
+		enum Ranking {
+			"top1"
+			"top2"
+			"top3"
+			"top4"
+			"top6"
+			"top8"
+			"top12"
+			"top16"
+			"top24"
+			"top32"
+			"top48"
+			"top64"
+		}
+
+		abstract qual_stats_hidden <<boolean>>
+		abstract seed_count <<int32>>
+
+		class PlayerId <<string>>
+	}
+
+	package beatmaps {
+		abstract beatmap_id as "_id" <<string>> #a9dcdf
+		abstract title <<string>>
+		abstract diff_name <<string>>
+		abstract banner_url <<string>>
+		abstract artist <<string>>
+		abstract sr <<number>>
+		abstract bpm <<number>>
+		abstract od <<number>>
+		abstract hp <<number>>
+		abstract drain_time <<number>>
+		abstract map_fetch_time as "fetch_time" <<Date>>
+	}
+
+	package users {
+		abstract user_id as "_id" <<string>> #a9dcdf
+		abstract username <<string>>
+		abstract rank <<int32>>
+		abstract user_fetch_time as "fetch_time" <<Date>>
+	}
+
+	package sessions {
+		abstract session_id as "_id" <<string>> #a9dcdf
+		abstract auth_time <<Date>>
+		entity discord_id
+	}
+
+	package scores {
+		abstract score_id as "_id" <<int32>> #a9dcdf
+		abstract score_list <<Record<MapId, ScoreList>>>
+		class ScoreList <<Record<PlayerId, Score[]>>>
+		class Score {
+			accuracy: <<double>>
+			score: <<int32>>
+			max_combo: <<int32>>
+			count_320: <<int32>>
+			count_300: <<int32>>
+			count_200: <<int32>>
+			count_100: <<int32>>
+			count_50: <<int32>>
+			count_miss: <<int32>>
+		}
+	}
+
+	entity TTL {
+		value: 1 day
+	}
+}
+
+registration_prop -[#add1b2]- Registration
+Registration::osu_id -[#add1b2]- PlayerId
+Registration::time -[#add1b2]- Time
+
+schedules -[#add1b2]- Schedule
+schedules -[#eb937f]- Event
+
+staff -[#eb937f]- Role
+staff -[#add1b2]- PlayerId
+
+mappool -[#eb937f]- Round
+mappool -- diamond1
+diamond1 -[#add1b2]- Map : qual
+diamond1 -[#add1b2]- NonQualifierPool : non-qual
+NonQualifierPool -[#eb937f]- Category
+NonQualifierPool -[#add1b2]- Map
+Map::id -[#add1b2]- MapId
+
+matches -- diamond2
+diamond2 -[#add1b2]- MatchId : qual
+diamond2 -[#add1b2]- NoBracketMatch : first round and gf
+diamond2 -[#add1b2]- BracketMatch
+NoBracketMatch -[#add1b2]- Match
+BracketMatch -- diamond3
+diamond3 -[#add1b2]- Match : winners brac and losers brac first round
+diamond3 -[#add1b2]- LegMatch : all other losers brac matches
+LegMatch -[#add1b2]- Match
+Match::match_id -[#add1b2]- MatchId
+Match::player1_id -[#add1b2]- PlayerId
+Match::player2_id -[#add1b2]- PlayerId
+Match::referee -[#add1b2]- PlayerId
+matches -[#eb937f]- Round
+BracketMatch -[#eb937f]- Bracket
+LegMatch -[#eb937f]- Leg
+
+standings -[#eb937f]- Ranking
+standings -[#add1b2]- PlayerId
+
+
+
+session_id .. discord_id
+user_fetch_time .. TTL
+map_fetch_time .. TTL
+auth_time .. TTL
+
+
+
+score_list -[#add1b2]- MapId
+score_list -[#add1b2]- ScoreList
+ScoreList -[#add1b2]- PlayerId
+ScoreList -[#add1b2]- Score
+
+
+
+MapId ..> beatmap_id
+PlayerId ..> user_id
+tournament_id ..> score_id
+
+@enduml
