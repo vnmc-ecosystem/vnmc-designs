@@ -1,0 +1,63 @@
+parameters:
+  - $ref: '../../../../components/parameters.yaml#/Id'
+  - $ref: '../../../../components/parameters.yaml#/Role'
+get:
+  summary: /staff/:role
+  responses:
+    '200':
+      description: Staff list (of a role)
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../components/schemas.yaml#/Staff'
+    '400':
+      $ref: '../../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../../components/responses.yaml#/InternalServerError'
+post:
+  summary: /staff/:id/:role
+  responses:
+    '201':
+      description: Staff member added
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../components/schemas.yaml#/StaffCreateDelete'
+    '400':
+      $ref: '../../../../components/responses.yaml#/InvalidRequestError'
+    '409':
+      $ref: '../../../../components/responses.yaml#/AlreadyExistsError'
+    '500':
+      $ref: '../../../../components/responses.yaml#/InternalServerError'
+put:
+  summary: /staff/:id/:role
+  responses:
+    '200':
+      description: Staff member updated
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../components/schemas.yaml#/StaffUpdate'
+    '400':
+      $ref: '../../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../../components/responses.yaml#/InternalServerError'
+delete:
+  summary: /staff/:id/:role
+  responses:
+    '200':
+      description: Staff member removed
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../components/schemas.yaml#/StaffCreateDelete'
+    '400':
+      $ref: '../../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../../components/responses.yaml#/InternalServerError'

@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: vnmc-api
+  version: 1.0.0
+  description: Central API of the VNMC tournament.
+servers:
+  - url: '{baseUrl}'
+    variables:
+      baseUrl:
+        default: 'localhost:8000'
+security: []
+
+paths:
+  /tournament/{year}:
+    $ref: './paths/tournament/{year}/tournament.{year}.yaml'
+  /mappool/{round}:
+    $ref: './paths/mappool/{round}/mappool.{round}.yaml'
+  /map/{round}/{code}:
+    $ref: './paths/map/{round}/{code}/map.{round}.{code}.yaml'
+  /schedule:
+    $ref: './paths/schedule/schedule.yaml'
+  /schedule/{event}:
+    $ref: './paths/schedule/{event}/schedule.{event}.yaml'
+  /standings:
+    $ref: './paths/standings/standings.yaml'
+  /staff/{id}/{role}:
+    $ref: './paths/staff/{id}/{role}/staff.{id}.{role}.yaml'
+  /player/{id}:
+    $ref: './paths/player/{id}/player.{id}.yaml'
+  /match/{id}/ref:
+    $ref: './paths/match/{id}/ref/match.{id}.ref.yaml'
+  /match/{id}/time:
+    $ref: './paths/match/{id}/time/match.{id}.time.yaml'
+  /match/{id}:
+    $ref: './paths/match/{id}/match.{id}.yaml'
+  /matches:
+    $ref: './paths/matches/matches.yaml'
+  /matches/{round}:
+    $ref: './paths/matches/{round}/matches.{round}.yaml'
+  /stats/{round}:
+    $ref: './paths/stats/{round}/stats.{round}.yaml'
+  /stats/reveal:
+    $ref: './paths/stats/reveal/stats.reveal.yaml'
+
+components:
+  schemas:
+    $ref: './components/schemas.yaml'
+  responses:
+    $ref: './components/responses.yaml'
+  parameters:
+    $ref: './components/parameters.yaml'
+  requestBodies:
+    $ref: './components/requestBodies.yaml'

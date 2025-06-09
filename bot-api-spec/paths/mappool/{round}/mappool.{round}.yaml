@@ -1,0 +1,47 @@
+parameters:
+  - $ref: '../../../components/parameters.yaml#/Round'
+get:
+  summary: /mappool/:round
+  responses:
+    '200': 
+      description: A map list of a mappool
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/Mappool'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'
+post:
+  summary: /mappool/:round
+  responses:
+    '201':
+      description: Mappool created
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/MappoolMutation'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '409':
+      $ref: '../../../components/responses.yaml#/AlreadyExistsError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'
+delete:
+  summary: /mappool/:round
+  responses:
+    '200':
+      description: Mappool deleted
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/MappoolMutation'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'

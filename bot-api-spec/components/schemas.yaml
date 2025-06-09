@@ -1,0 +1,271 @@
+# GET responses
+Mappool:
+  type: object
+  properties:
+    year:
+      type: string
+    round:
+      type: string
+    mappool:
+      type: array
+      items:
+        type: object
+        properties:
+          title:
+            type: string
+          diff_name:
+            type: string
+          url:
+            type: string
+Map:
+  type: object
+  properties:
+    year:
+      type: string
+    round:
+      type: string
+    code:
+      type: string
+    map:
+      type: object
+      properties:  
+        title:
+          type: string
+        diff_name:
+          type: string
+        url:
+          type: string
+        banner_url:
+          type: string
+        artist:
+          type: string
+        sr:
+          type: number
+        bpm:
+          type: number
+        od:
+          type: number
+        hp:
+          type: number
+        drain_time:
+          type: number
+Schedule:
+  type: object
+  properties:
+    year:
+      type: number
+    events:
+      type: array
+      items:
+        type: object
+        properties:
+          event_name:
+            type: string
+          start_time:
+            type: number
+          end_time:
+            type: number
+Standings:
+  type: object
+  properties:
+    year:
+      type: string
+    standings:  
+      type: array
+      items:
+        type: array
+        items:
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: object
+                properties:
+                  username:
+                    type: string
+                  url:
+                    type: string
+Player:
+  type: object
+  properties:
+    year:
+      type: string
+    players:
+      type: array
+      items:
+        type: object
+        properties:
+          username:
+            type: string
+          url:
+            type: string
+          rank:
+            type: number
+Staff:
+  type: object
+  additionalProperties:
+    type: array
+    items:
+      type: object
+      properties:
+        username:
+          type: string
+        url:
+          type: string
+Match:
+  type: object
+  properties:
+    year:
+      type: string
+    round:
+      type: string
+    match_id:
+      type: number
+    player_1_name:
+      type: string
+    player_1_url:
+      type: string
+    player_1_seed:
+      type: number
+    player_1_score:
+      type: number
+    player_2_name:
+      type: string
+    player_2_url:
+      type: string
+    player_2_seed:
+      type: number
+    player_2_score:
+      type: number
+    match_time:
+      type: number
+    referee:
+      type: string
+Matches:
+  type: object
+  properties:
+    year:
+      type: number
+    round:
+      type: string
+    matches:
+      type: array
+      items:
+        type: object
+        properties:
+          match_id:
+            type: number
+          player_1_name:
+            type: string
+          player_1_url:
+            type: string
+          player_1_seed:
+            type: number
+          player_1_score:
+            type: number
+          player_2_name:
+            type: string
+          player_2_url:
+            type: string
+          player_2_seed:
+            type: number
+          player_2_score:
+            type: number
+          match_time:
+            type: number
+Stats: # add stats object?
+  type: object
+
+# POST/PUT/DELETE responses
+TournamentAdd:
+  type: object
+  properties:
+    year:
+      type: string
+MappoolMutation:
+  type: object
+  properties:
+    round:
+      type: string
+MapMutation:
+  type: object
+  properties:
+    round:
+      type: string
+    code:
+      type: string
+    map_id:
+      type: string
+ScheduleCreateUpdate:
+  type: object
+  properties:
+    year:
+      type: number
+    event_name:
+      type: string
+    start_time:
+      type: number
+    end_time:
+      type: number
+ScheduleDelete:
+  type: object
+  properties:
+    year:
+      type: number
+    event_name:
+      type: string
+PlayerRegistration:
+  type: object
+  properties:
+    year:
+      type: string
+    username:
+      type: string
+StaffCreateDelete:
+  type: object
+  properties:
+    name:
+      type: string
+    role:
+      type: string
+StaffUpdate:
+  type: object
+  properties:
+    name:
+      type: string
+    old_role:
+      type: string
+    new_role:
+      type: string
+MatchRefUpdate:
+  type: object
+  properties:
+    match_id:
+      type: string
+    referee:
+      type: string
+MatchRefDelete:
+  type: object
+  properties:
+    match_id:
+      type: string
+MatchTimeUpdate:
+  type: object
+  properties:
+    match_id:
+      type: string
+    time:
+      type: number
+MatchesUpdate:
+  type: object
+  properties:
+    year:
+      type: number
+
+
+
+Exception:
+  type: object
+  properties:
+    message:
+      type: string

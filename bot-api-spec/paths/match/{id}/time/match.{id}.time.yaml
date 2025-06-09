@@ -1,0 +1,19 @@
+parameters:
+  - $ref: '../../../../components/parameters.yaml#/Id'
+put:
+  summary: /match/:id/time
+  responses:
+    '200':
+      description: Match time updated
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../components/schemas.yaml#/MatchTimeUpdate'
+    '400':
+      $ref: '../../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../../components/responses.yaml#/InternalServerError'
+  requestBody:
+    $ref: '../../../../components/requestBodies.yaml#/Time'

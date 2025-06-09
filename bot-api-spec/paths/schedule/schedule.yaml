@@ -1,0 +1,11 @@
+get:
+  summary: /schedule
+  responses:
+    '200':
+      description: Tournament schedule
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/schemas.yaml#/Schedule'
+    '500':
+      $ref: '../../components/responses.yaml#/InternalServerError'

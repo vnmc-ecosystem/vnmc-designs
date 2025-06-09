@@ -1,0 +1,24 @@
+InvalidRequestError:
+  description: Invalid Parameter or Body
+  content:
+    application/json:
+      schema:
+        $ref: './schemas.yaml#/Exception'
+NotFoundError:
+  description: Resource Not Found
+  content:
+    application/json:
+      schema:
+        $ref: './schemas.yaml#/Exception'
+AlreadyExistsError:
+  description: Resource Already Exists
+  content:
+    application/json:
+      schema:
+        $ref: './schemas.yaml#/Exception'
+InternalServerError:
+  description: Server Error - Please Ping @SorA!
+  content:
+    application/json:
+      schema:
+        $ref: './schemas.yaml#/Exception'

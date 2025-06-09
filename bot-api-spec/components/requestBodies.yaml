@@ -1,0 +1,27 @@
+MapId:
+  required: true
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          map_id:
+            type: string
+Time:
+  required: true
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          time:
+            type: number
+RefId:
+  required: true
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          ref_id:
+            type: string

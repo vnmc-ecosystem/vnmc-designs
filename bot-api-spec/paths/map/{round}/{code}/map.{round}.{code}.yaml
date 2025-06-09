@@ -1,0 +1,67 @@
+parameters:
+  - $ref: '../../../../components/parameters.yaml#/Round'
+  - $ref: '../../../../components/parameters.yaml#/MapCode'
+get:
+  summary: /map/:round/:code
+  responses:
+    '200':
+      description: A tournament map
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../components/schemas.yaml#/Map'
+    '400':
+      $ref: '../../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../../components/responses.yaml#/InternalServerError'
+post:
+  summary: /map/:round/:code
+  responses:
+    '201':
+      description: Map added
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../components/schemas.yaml#/MapMutation'
+    '400':
+      $ref: '../../../../components/responses.yaml#/InvalidRequestError'
+    '409':
+      $ref: '../../../../components/responses.yaml#/AlreadyExistsError'
+    '500':
+      $ref: '../../../../components/responses.yaml#/InternalServerError'
+  requestBody:
+    $ref: '../../../../components/requestBodies.yaml#/MapId'
+put:
+  summary: /map/:round/:code
+  responses:
+    '200':
+      description: Map updated
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../components/schemas.yaml#/MapMutation'
+    '400':
+      $ref: '../../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../../components/responses.yaml#/InternalServerError'
+  requestBody:
+    $ref: '../../../../components/requestBodies.yaml#/MapId'
+delete:
+  summary: /map/:round/:code
+  responses:
+    '200':
+      description: Map deleted
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../components/schemas.yaml#/MapMutation'
+    '400':
+      $ref: '../../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../../components/responses.yaml#/InternalServerError'

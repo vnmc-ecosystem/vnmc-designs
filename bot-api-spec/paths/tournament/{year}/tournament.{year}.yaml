@@ -1,0 +1,17 @@
+parameters:
+  - $ref: '../../../components/parameters.yaml#/Year'
+post:
+  summary: /tournament/:year
+  responses:
+    '201':
+      description: Tournament created
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/TournamentAdd'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '409':
+      $ref: '../../../components/responses.yaml#/AlreadyExistsError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'

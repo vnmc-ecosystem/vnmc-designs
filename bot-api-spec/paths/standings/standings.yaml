@@ -1,0 +1,11 @@
+get:
+  summary: /standings
+  responses:
+    '200':
+      description: Tournament standings
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/schemas.yaml#/Standings'
+    '500':
+      $ref: '../../components/responses.yaml#/InternalServerError'

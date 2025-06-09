@@ -1,0 +1,11 @@
+put:
+  summary: /matches
+  responses:
+    '200':
+      description: Matches fetched
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/schemas.yaml#/MatchesUpdate'
+    '500':
+      $ref: '../../components/responses.yaml#/InternalServerError'

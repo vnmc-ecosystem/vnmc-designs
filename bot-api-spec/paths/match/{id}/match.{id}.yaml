@@ -1,0 +1,17 @@
+parameters:
+  - $ref: '../../../components/parameters.yaml#/Id'
+get:
+  summary: /match/:id
+  responses:
+    '200':
+      description: Match information
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/Match'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'

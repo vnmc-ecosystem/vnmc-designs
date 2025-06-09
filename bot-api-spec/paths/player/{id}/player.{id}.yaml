@@ -1,0 +1,45 @@
+parameters:
+  - $ref: '../../../components/parameters.yaml#/Id'
+get:
+  summary: /player
+  parameters:
+    - $ref: '../../../components/parameters.yaml#/Name'
+    - $ref: '../../../components/parameters.yaml#/Sort'
+    - $ref: '../../../components/parameters.yaml#/Limit'
+  responses:
+    '200':
+      description: Registered player list
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/Player'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'
+post:
+  summary: /player/:id
+  responses:
+    '201':
+      description: Player registered
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/PlayerRegistration'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '409':
+      $ref: '../../../components/responses.yaml#/AlreadyExistsError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'
+delete:
+  summary: /player/:id
+  responses:
+    '204':
+      description: Player unregistered, no content
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'

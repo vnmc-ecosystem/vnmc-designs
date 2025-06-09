@@ -1,0 +1,51 @@
+parameters:
+  - $ref: '../../../components/parameters.yaml#/Event'
+post:
+  summary: /schedule/:event
+  responses:
+    '201':
+      description: Event created
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/ScheduleCreateUpdate'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '409':
+      $ref: '../../../components/responses.yaml#/AlreadyExistsError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'
+  requestBody:
+    $ref: '../../../components/requestBodies.yaml#/Time'
+put:
+  summary: /schedule/:event
+  responses:
+    '200':
+      description: Event time updated
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/ScheduleCreateUpdate'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'
+  requestBody:
+    $ref: '../../../components/requestBodies.yaml#/Time'
+delete:
+  summary: /schedule/:event
+  responses:
+    '200':
+      description: Event deleted
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/ScheduleDelete'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'

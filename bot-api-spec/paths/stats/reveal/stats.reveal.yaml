@@ -1,0 +1,7 @@
+put:
+  summary: /stats/reveal
+  responses:
+    '204':
+      description: Qualifiers statistics revealed, no content
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'

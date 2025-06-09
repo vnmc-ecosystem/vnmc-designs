@@ -1,0 +1,17 @@
+parameters:
+  - $ref: '../../../components/parameters.yaml#/Round'
+get:
+  summary: /matches/:round
+  responses:
+    '200':
+      description: Matches of a round
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/Matches'
+    '400':
+      $ref: '../../../components/responses.yaml#/InvalidRequestError'
+    '404':
+      $ref: '../../../components/responses.yaml#/NotFoundError'
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'
