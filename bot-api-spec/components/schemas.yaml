@@ -3,7 +3,7 @@ Mappool:
   type: object
   properties:
     year:
-      type: string
+      type: number
     round:
       type: string
     mappool:
@@ -21,7 +21,7 @@ Map:
   type: object
   properties:
     year:
-      type: string
+      type: number
     round:
       type: string
     code:
@@ -69,7 +69,7 @@ Standings:
   type: object
   properties:
     year:
-      type: string
+      type: number
     standings:  
       type: array
       items:
@@ -89,7 +89,7 @@ Player:
   type: object
   properties:
     year:
-      type: string
+      type: number
     players:
       type: array
       items:
@@ -116,7 +116,7 @@ Match:
   type: object
   properties:
     year:
-      type: string
+      type: number
     round:
       type: string
     match_id:
@@ -181,7 +181,7 @@ TournamentAdd:
   type: object
   properties:
     year:
-      type: string
+      type: number
 MappoolMutation:
   type: object
   properties:
@@ -218,7 +218,7 @@ PlayerRegistration:
   type: object
   properties:
     year:
-      type: string
+      type: number
     username:
       type: string
 StaffCreateDelete:
