@@ -120,7 +120,7 @@ Match:
     round:
       type: string
     match_id:
-      type: number
+      type: string
     player_1_name:
       type: string
     player_1_url:
@@ -154,7 +154,7 @@ Matches:
         type: object
         properties:
           match_id:
-            type: number
+            type: string
           player_1_name:
             type: string
           player_1_url:
