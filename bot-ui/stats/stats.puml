@@ -1,0 +1,27 @@
+@startsalt match
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{
+		= <color:#ffffff><&magnifying-glass> GET
+		{+
+			==== <color:#ffffff>VNMC(year) - (full_round_name) - Stats
+			.
+			<color:#ffffff>Snapshot generated at: (snapshot_time)
+			.
+			<color:#ffffff>__(stats_link)__
+		}
+		.
+		= <color:#ffffff><&pencil> PUT /reveal /' toggle ON '/
+		{+
+			== <color:#ffffff><&check> Qualifier results online!
+		}
+		.
+		= <color:#ffffff><&pencil> PUT /reveal /' toggle OFF '/
+		{+
+			== <color:#ffffff><&check> Qualifier results hidden!
+		}
+	}
+@endsalt

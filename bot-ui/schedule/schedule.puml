@@ -1,0 +1,39 @@
+@startsalt schedule
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{
+		= <color:#ffffff><&magnifying-glass> GET
+		{+
+			==== <color:#ffffff>VNMC(year) - Tournament Schedule
+			.
+			<color:#ffffff>**(event_name)**: (event_start_time) - (event_end_time)
+			/' rest of schedules '/ .
+		}
+		.
+		= <color:#ffffff><&document> POST
+		{+
+			== <color:#ffffff><&check> Successfully added new schedule for VNMC(year)!
+			.
+			<color:#ffffff>**Event Name**: (event_name)
+			<color:#ffffff>**Start Time**: (event_start_time)
+			<color:#ffffff>**End Time**: (event_end_time)
+		}
+		.
+		= <color:#ffffff><&pencil> PUT
+		{+
+			== <color:#ffffff><&check> Successfully updated schedule for VNMC(year)!
+			.
+			<color:#ffffff>**Updated Event Name**: (event_name)
+			<color:#ffffff>**New Start Time**: (event_start_time)
+			<color:#ffffff>**New End Time**: (event_end_time)
+		}
+		.
+		= <color:#ffffff><&trash> DELETE
+		{+
+			== <color:#ffffff><&check> Successfully deleted schedule (event_name) for VNMC(year)!
+		}
+	}
+@endsalt

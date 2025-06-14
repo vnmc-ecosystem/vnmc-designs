@@ -1,0 +1,22 @@
+@startsalt login
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{
+		{+
+			<color:#ffffff>Please follow this link: <color:#4c8cda>__(auth_link)__ <color:#ffffff>and click on the **Authorize** button.
+			.
+			==== <color:#ffffff><&clock> Waiting for authentication...
+		}
+		.
+		{+
+			== <color:#ffffff><&check> Successfully authenticated as (player_name)!
+		}
+		.
+		{+
+			== <color:#ffffff><&x> Authentication failed. Please try again.
+		}
+	}
+@endsalt

@@ -1,0 +1,46 @@
+@startsalt help
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{
+		{T
+			+ 	<color:#ffffff>**Command**
+			+ 	<color:#ffffff>/mappool
+			++ 	<color:#ffffff>/get
+			++ 	<color:#ffffff>/create
+			++ 	<color:#ffffff>/delete
+			+ 	<color:#ffffff>/map
+			++ 	<color:#ffffff>/get
+			++ 	<color:#ffffff>/create
+			++ 	<color:#ffffff>/edit
+			++ 	<color:#ffffff>/delete
+			+ 	<color:#ffffff>/matches
+			++ 	<color:#ffffff>/get
+			++ 	<color:#ffffff>/fetch
+			+ 	<color:#ffffff>/match
+			++ 	<color:#ffffff>/get
+			++ 	<color:#ffffff>/assign-ref
+			++ 	<color:#ffffff>/remove-ref
+			++ 	<color:#ffffff>/reschedule
+			+ 	<color:#ffffff>/player
+			++ 	<color:#ffffff>/list
+			++ 	<color:#ffffff>/register
+			++ 	<color:#ffffff>/leave
+			+ 	<color:#ffffff>/staff
+			++ 	<color:#ffffff>/list
+			++ 	<color:#ffffff>/register
+			++ 	<color:#ffffff>/update
+			++ 	<color:#ffffff>/leave
+			+ 	<color:#ffffff>/schedule
+			++ 	<color:#ffffff>/list
+			++ 	<color:#ffffff>/create
+			++ 	<color:#ffffff>/update
+			++ 	<color:#ffffff>/delete
+			+ 	<color:#ffffff>/standings
+			+ 	<color:#ffffff>/help
+			+ 	<color:#ffffff>/login
+		}
+	}
+@endsalt

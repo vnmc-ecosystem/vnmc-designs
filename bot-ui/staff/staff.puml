@@ -1,0 +1,32 @@
+@startsalt staff
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{
+		= <color:#ffffff><&magnifying-glass> GET
+		{+
+			==== <color:#ffffff>VNMC(year) - Staff List
+			.
+			<color:#ffffff>**(role)**
+			*<color:#ffffff>(name)
+			/' rest of roles and members '/ .
+		}
+		.
+		= <color:#ffffff><&document> POST
+		{+
+			== <color:#ffffff><&check> Successfully registered new (full_staff_role) to (player_name)!
+		}
+		.
+		= <color:#ffffff><&pencil> PUT
+		{+
+			== <color:#ffffff><&check> Successfully switched (player_name)'s role to (new_full_staff_role) from (old_full_staff_role)!	
+		}
+		.
+		= <color:#ffffff><&trash> DELETE
+		{+
+			== <color:#ffffff><&check> Successfully deleted (full_staff_role) role for (player_name)!
+		}
+	}
+@endsalt

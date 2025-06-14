@@ -1,0 +1,33 @@
+@startsalt mappool
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{
+		= <color:#ffffff><&magnifying-glass> GET
+		{+
+			==== <color:#ffffff>VNMC(year) - (full_round_name) Mappool
+			.
+			<color:#ffffff><back:#6fa8dc><color:#000000>**(code)**</back> - (title) [(diff_name)]
+			/' rest of RC maps '/ .
+			<color:#ffffff><back:#8e7cc3><color:#000000>**(code)**</back> - (title) [(diff_name)]
+			/' rest of HB maps '/ .
+			<color:#ffffff><back:#ffd966><color:#000000>**(code)**</back> - (title) [(diff_name)]
+			/' rest of LN maps '/ .
+			<color:#ffffff><back:#e06666><color:#000000>**(code)**</back> - (title) [(diff_name)]
+			/' rest of SV maps '/ .
+			<color:#ffffff><back:#d9d9d9><color:#000000>**(code)**</back> - (title) [(diff_name)]
+		}
+		.
+		= <color:#ffffff><&document> POST
+		{+
+			== <color:#ffffff><&check> Successfully created (full_round_name) mappool!
+		}
+		.
+		= <color:#ffffff><&trash> DELETE
+		{+
+			== <color:#ffffff><&check> Successfully deleted (full_round_name) mappool!
+		}
+	}
+@endsalt

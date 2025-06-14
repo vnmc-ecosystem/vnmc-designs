@@ -1,0 +1,33 @@
+@startsalt match
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{
+		= <color:#ffffff><&magnifying-glass> GET
+		{+
+			==== <color:#ffffff>VNMC(year) - (full_round_name) - Match (match_id)
+			.
+			<color:#ffffff><:1f7e5:> **(player_1_name)** - #(seed) (time - remaining_time) **(player_2_name)** - #(seed) <:1f7e6:> /' blue and red squares for team sides, not supported :< '/
+			<color:#ffffff><:1f7e5:> **(player_1_name)** - #(seed) **6** - 0 **(player_2_name)** - #(seed) <:1f7e6:> /' if match is completed '/
+			.
+			<color:#ffffff>**Referee**: (referee_name)
+		}
+		.
+		= <color:#ffffff><&pencil> PUT /ref
+		{+
+			== <color:#ffffff><&check> Successfully assigned referee (referee_name) to match (match_id)!
+		}
+		.
+		= <color:#ffffff><&trash> DELETE /ref
+		{+
+			== <color:#ffffff><&check> Successfully removed referee for match (match_id)!
+		}
+		.
+		= <color:#ffffff><&pencil> PUT /time
+		{+
+			== <color:#ffffff><&check> Successfully rescheduled match (match_id) to (new_time)!
+		}
+	}
+@endsalt

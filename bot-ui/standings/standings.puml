@@ -1,0 +1,20 @@
+@startsalt standings
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{
+		= <color:#ffffff><&magnifying-glass> GET
+		{+
+			==== <color:#ffffff>VNMC(year) - Final Standings
+			.
+			<color:#ffffff><:1f947:> **(player_name)**
+			<color:#ffffff><:1f948:> **(player_name)**
+			<color:#ffffff><:1f949:> **(player_name)**
+			<color:#ffffff>//(rank)//: **(player_name)**
+			<color:#ffffff>//(rank-rank)//: **(player_name)**, **(player_name)** /' if rank is a range '/
+			/' rest of players '/
+		}
+	}
+@endsalt

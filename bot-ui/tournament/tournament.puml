@@ -1,0 +1,13 @@
+@startsalt mappool
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{
+		= <color:#ffffff><&document> POST
+		{+
+			== <color:#ffffff><&check> Successfully created tournament VNMC(year)!
+		}
+	}
+@endsalt

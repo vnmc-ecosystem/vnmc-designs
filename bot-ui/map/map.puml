@@ -1,0 +1,42 @@
+@startsalt map
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{
+		= <color:#ffffff><&magnifying-glass> GET
+		{+
+			==== <color:#ffffff>VNMC(year) - (full_round_name) - (code) {<img:https://dummyimage.com/150x50/ffffff/000000&text=(map_img)>}
+			== <color:#ffffff>**(title) [(diff_name)]**
+			.
+			=== <color:#ffffff>(artist)
+			.
+			<color:#ffffff>**SR**: (sr)
+			<color:#ffffff>**BPM**: (bpm)
+			<color:#ffffff>**OD**: (od)
+			<color:#ffffff>**HP**: (hp)
+			<color:#ffffff>**Time**: (mm:ss) /' use drain time '/
+		}
+		.
+		= <color:#ffffff><&document> POST
+		{+
+			== <color:#ffffff><&check> Successfully added new map to pool (full_round_name)!
+			.
+			<color:#ffffff>**Map Code**: (code)
+			<color:#ffffff>**Map ID**: (id)
+		}
+		.
+		= <color:#ffffff><&pencil> PUT
+		{+
+			== <color:#ffffff><&check> Successfully updated map (code) in pool (full_round_name)!
+			.
+			<color:#ffffff>**New Map ID**: (id)
+		}
+		.
+		= <color:#ffffff><&trash> DELETE
+		{+
+			== <color:#ffffff><&check> Successfully deleted map (code) in pool (full_round_name)!
+		}
+	}
+@endsalt

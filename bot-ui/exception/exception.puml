@@ -1,0 +1,14 @@
+@startsalt exception
+	<style>
+		saltDiagram {
+			BackgroundColor #242429
+		}
+	</style>
+	{+
+		== <color:#ffffff><&x> Error occurred!
+		.
+		=== <color:#ffffff>(error_code) - (reason)
+		.
+		<color:#ffffff>(error_message)
+	}
+@endsalt
