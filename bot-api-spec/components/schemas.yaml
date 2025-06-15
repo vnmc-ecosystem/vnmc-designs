@@ -71,20 +71,80 @@ Standings:
     year:
       type: number
     standings:  
-      type: array
-      items:
-        type: array
-        items:
-          oneOf:
-            - type: string
-            - type: array
-              items:
-                type: object
-                properties:
-                  username:
-                    type: string
-                  url:
-                    type: string
+      type: object
+      properties:
+        qual:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        ro64:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        ro32:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        ro16:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        qf:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        sf:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        f:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        gf:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
 Player:
   type: object
   properties:
@@ -103,15 +163,102 @@ Player:
             type: number
 Staff:
   type: object
-  additionalProperties:
-    type: array
-    items:
+  properties:
+    year:
+      type: number
+    staffs:
       type: object
       properties:
-        username:
-          type: string
-        url:
-          type: string
+        host:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        coHost:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        designer:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        referee:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        mappoolers:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        mappers:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        playtesters:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        streamers:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        commentators:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        statistician:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
 Match:
   type: object
   properties:
