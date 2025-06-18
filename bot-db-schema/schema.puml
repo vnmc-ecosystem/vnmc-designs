@@ -23,6 +23,7 @@ package vnmc <<Database>> {
 		enum Event {
 			"registration"
 			"qual"
+			"ro64"
 			"ro32"
 			"ro16"
 			"qf"
@@ -45,6 +46,7 @@ package vnmc <<Database>> {
 		class MapId <<string>>
 		enum Round {
 			"qual"
+			"ro64"
 			"ro32"
 			"ro16"
 			"qf"

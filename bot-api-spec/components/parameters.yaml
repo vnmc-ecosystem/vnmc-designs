@@ -12,6 +12,7 @@ Round:
     type: string
     enum:
       - qual
+      - ro64
       - ro32
       - ro16
       - qf
@@ -27,6 +28,7 @@ Event:
     enum:
       - registration
       - qual
+      - ro64
       - ro32
       - ro16
       - qf
