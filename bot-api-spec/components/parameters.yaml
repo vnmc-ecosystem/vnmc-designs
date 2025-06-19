@@ -54,6 +54,17 @@ Role: # add enum later on?
   required: true
   schema:
     type: string
+    enum:
+      - host
+      - cohost
+      - designer
+      - referee
+      - mappoolers
+      - mappers
+      - playtesters
+      - streamers
+      - commentators
+      - statistician
 Name:
   name: name
   in: query

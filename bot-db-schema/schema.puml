@@ -33,8 +33,18 @@ package vnmc <<Database>> {
 		}
 
 		abstract staff <<Record<Role, PlayerId[]>>
-		enum Role
-		note right of Role : add enum later
+		enum Role {
+			"host"
+			"cohost"
+			"designer"
+			"referee"
+			"mappoolers"
+			"mappers"
+			"playtesters"
+			"streamers"
+			"commentators"
+			"statistician"
+		}
 
 		abstract mappool <<Record<Round, Map[] | NonQualifierPool>>>
 		class Map {
