@@ -11,6 +11,8 @@ Mappool:
       items:
         type: object
         properties:
+          code:
+            type: string
           title:
             type: string
           diff_name:
