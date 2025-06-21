@@ -16,7 +16,7 @@
 			<color:#ffffff>**BPM**: (bpm)
 			<color:#ffffff>**OD**: (od)
 			<color:#ffffff>**HP**: (hp)
-			<color:#ffffff>**Time**: (mm:ss) /' use drain time '/
+			<color:#ffffff>**Length**: (mm:ss) /' use drain time '/
 		}
 		.
 		= <color:#ffffff><&document> POST
