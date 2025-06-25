@@ -5,7 +5,7 @@
 		}
 	</style>
 	{+
-		== <color:#ffffff><&x> Error occurred!
+		== <color:#ffffff>❌ Error occurred!
 		.
 		=== <color:#ffffff>(error_code) - (reason)
 		.

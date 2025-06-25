@@ -5,9 +5,9 @@
 		}
 	</style>
 	{
-		= <color:#ffffff><&document> POST
+		= <color:#ffffff>📄 POST
 		{+
-			== <color:#ffffff><&check> Successfully created tournament VNMC(year)!
+			== <color:#ffffff>✅ Successfully created tournament VNMC(year)!
 		}
 	}
 @endsalt
