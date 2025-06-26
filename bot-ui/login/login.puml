@@ -6,17 +6,17 @@
 	</style>
 	{
 		{+
-			<color:#ffffff>Please follow this link: <color:#4c8cda>__(auth_link)__ <color:#ffffff>and click on the **Authorize** button.
+			<b><color:#ffffff><size:16>Please follow this link: <color:#4c8cda>__(auth_link)__ <color:#ffffff>and click on the **Authorize** button.</b>
 			.
-			==== <color:#ffffff>⏳ Waiting for authentication...
+			<color:#ffffff><size:14>⏳ Waiting for authentication...
 		}
 		.
 		{+
-			== <color:#ffffff>✅ Successfully authenticated as (player_name)!
+			<b><color:#ffffff><size:16>✅ Successfully authenticated as (player_name)!</b>
 		}
 		.
 		{+
-			== <color:#ffffff>❌ Authentication failed. Please try again.
+			<b><color:#ffffff><size:16>❌ Authentication failed. Please try again.</b>
 		}
 	}
 @endsalt

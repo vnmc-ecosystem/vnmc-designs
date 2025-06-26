@@ -5,10 +5,10 @@
 		}
 	</style>
 	{+
-		== <color:#ffffff>❌ Error occurred!
+		<b><color:#ffffff><size:16>❌ Error occurred!</b>
 		.
-		=== <color:#ffffff>(error_code) - (reason)
+		<color:#ffffff><size:14>(error_code) - (reason)
 		.
-		<color:#ffffff>(error_message)
+		<color:#ffffff><size:14>(error_message)
 	}
 @endsalt

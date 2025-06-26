@@ -7,33 +7,33 @@
 	{
 		= <color:#ffffff>🔍 GET
 		{+
-			==== <color:#ffffff>VNMC(year) - Tournament Schedule
+			<b><color:#ffffff><size:14>VNMC(year) - Tournament Schedule</b>
 			.
-			<color:#ffffff>**(event_name)**: (event_start_time) - (event_end_time)
+			<color:#ffffff><size:14>**(event_name)**: (event_start_time) - (event_end_time)
 			/' rest of schedules '/ .
 		}
 		.
 		= <color:#ffffff>📄 POST
 		{+
-			== <color:#ffffff>✅ Successfully added new schedule for VNMC(year)!
+			<b><color:#ffffff><size:16>✅ Successfully added new schedule for VNMC(year)!</b>
 			.
-			<color:#ffffff>**Event Name**: (event_name)
-			<color:#ffffff>**Start Time**: (event_start_time)
-			<color:#ffffff>**End Time**: (event_end_time)
+			<color:#ffffff><size:14>**Event Name**: (event_name)
+			<color:#ffffff><size:14>**Start Time**: (event_start_time)
+			<color:#ffffff><size:14>**End Time**: (event_end_time)
 		}
 		.
 		= <color:#ffffff>✏️ PUT
 		{+
-			== <color:#ffffff>✅ Successfully updated schedule for VNMC(year)!
+			<b><color:#ffffff><size:16>✅ Successfully updated schedule for VNMC(year)!</b>
 			.
-			<color:#ffffff>**Updated Event Name**: (event_name)
-			<color:#ffffff>**New Start Time**: (event_start_time)
-			<color:#ffffff>**New End Time**: (event_end_time)
+			<color:#ffffff><size:14>**Updated Event Name**: (event_name)
+			<color:#ffffff><size:14>**New Start Time**: (event_start_time)
+			<color:#ffffff><size:14>**New End Time**: (event_end_time)
 		}
 		.
 		= <color:#ffffff>🗑️ DELETE
 		{+
-			== <color:#ffffff>✅ Successfully deleted schedule (event_name) for VNMC(year)!
+			<b><color:#ffffff><size:16>✅ Successfully deleted schedule (event_name) for VNMC(year)!</b>
 		}
 	}
 @endsalt

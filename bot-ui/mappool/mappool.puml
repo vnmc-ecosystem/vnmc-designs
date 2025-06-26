@@ -7,7 +7,7 @@
 	{
 		= <color:#ffffff>🔍 GET
 		{+
-			==== <color:#ffffff>VNMC(year) - (full_round_name) Mappool
+			<b><color:#ffffff><size:14>VNMC(year) - (full_round_name) Mappool</b>
 			.
 			<color:#ffffff><back:#6fa8dc><color:#000000>**(code)**</back> - (title) [(diff_name)]
 			/' rest of RC maps '/ .
@@ -22,12 +22,12 @@
 		.
 		= <color:#ffffff>📄 POST
 		{+
-			== <color:#ffffff>✅ Successfully created (full_round_name) mappool!
+			<b><color:#ffffff><size:16>✅ Successfully created (full_round_name) mappool!</b>
 		}
 		.
 		= <color:#ffffff>🗑️ DELETE
 		{+
-			== <color:#ffffff>✅ Successfully deleted (full_round_name) mappool!
+			<b><color:#ffffff><size:16>✅ Successfully deleted (full_round_name) mappool!</b>
 		}
 	}
 @endsalt

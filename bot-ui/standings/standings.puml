@@ -7,13 +7,13 @@
 	{
 		= <color:#ffffff>🔍 GET
 		{+
-			==== <color:#ffffff>VNMC(year) - Final Standings
+			<b><color:#ffffff><size:14>VNMC(year) - Final Standings</b>
 			.
-			<color:#ffffff>🥇 **(player_name)**
-			<color:#ffffff>🥈 **(player_name)**
-			<color:#ffffff>🥉 **(player_name)**
-			<color:#ffffff>//(rank)//: **(player_name)**
-			<color:#ffffff>//(rank-rank)//: **(player_name)**, **(player_name)** /' if rank is a range '/
+			<color:#ffffff><size:14>🥇 **(player_name)**
+			<color:#ffffff><size:14>🥈 **(player_name)**
+			<color:#ffffff><size:14>🥉 **(player_name)**
+			<color:#ffffff><size:14>//(rank)//: **(player_name)**
+			<color:#ffffff><size:14>//(rank-rank)//: **(player_name)**, **(player_name)** /' if rank is a range '/
 			/' rest of players '/
 		}
 	}

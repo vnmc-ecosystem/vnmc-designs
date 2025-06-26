@@ -7,36 +7,36 @@
 	{
 		= <color:#ffffff>🔍 GET
 		{+
-			==== <color:#ffffff>VNMC(year) - (full_round_name) - (code) {<img:https://dummyimage.com/150x50/ffffff/000000&text=(map_img)>}
-			== <color:#ffffff>**(title) [(diff_name)]**
+			<b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - (code) {<img:https://dummyimage.com/150x50/ffffff/000000&text=(map_img)>}</b>
+			<b><color:#4c8cda><size:16>__(title) [(diff_name)]__</b>
 			.
-			=== <color:#ffffff>(artist)
+			<color:#ffffff><size:14>(artist)
 			.
-			<color:#ffffff>**SR**: (sr)
-			<color:#ffffff>**BPM**: (bpm)
-			<color:#ffffff>**OD**: (od)
-			<color:#ffffff>**HP**: (hp)
-			<color:#ffffff>**Length**: (mm:ss) /' use drain time '/
+			<color:#ffffff><size:14>**SR**: (sr)
+			<color:#ffffff><size:14>**BPM**: (bpm)
+			<color:#ffffff><size:14>**OD**: (od)
+			<color:#ffffff><size:14>**HP**: (hp)
+			<color:#ffffff><size:14>**Length**: (mm:ss) /' use drain time '/
 		}
 		.
 		= <color:#ffffff>📄 POST
 		{+
-			== <color:#ffffff>✅ Successfully added new map to pool (full_round_name)!
+			<b><color:#ffffff><size:16>✅ Successfully added new map to pool (full_round_name)!</b>
 			.
-			<color:#ffffff>**Map Code**: (code)
-			<color:#ffffff>**Map ID**: (id)
+			<color:#ffffff><size:14>**Map Code**: (code)
+			<color:#ffffff><size:14>**Map ID**: (id)
 		}
 		.
 		= <color:#ffffff>✏️ PUT
 		{+
-			== <color:#ffffff>✅ Successfully updated map (code) in pool (full_round_name)!
+			<b><color:#ffffff><size:16>✅ Successfully updated map (code) in pool (full_round_name)!</b>
 			.
-			<color:#ffffff>**New Map ID**: (id)
+			<color:#ffffff><size:14>**New Map ID**: (id)
 		}
 		.
 		= <color:#ffffff>🗑️ DELETE
 		{+
-			== <color:#ffffff>✅ Successfully deleted map (code) in pool (full_round_name)!
+			<b><color:#ffffff><size:16>✅ Successfully deleted map (code) in pool (full_round_name)!</b>
 		}
 	}
 @endsalt

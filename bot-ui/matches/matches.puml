@@ -7,16 +7,16 @@
 	{
 		= <color:#ffffff>🔍 GET
 		{+
-			==== <color:#ffffff>VNMC(year) - (full_round_name) - Match List
+			<b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Match List</b>
 			.
-			<color:#ffffff>**Match (match_id)**:  🟥 **(player_1_name)** - #(seed) (time - remaining_time) **(player_2_name)** - #(seed) 🟦
-			<color:#ffffff>**Match (match_id)**:  🟥 **(player_1_name)** - #(seed) **6** - 0 **(player_2_name)** - #(seed) 🟦 /' if match is completed '/
+			<color:#ffffff><size:14>**Match (match_id)**:  🟥 **(player_1_name)** - #(seed) (time - remaining_time) **(player_2_name)** - #(seed) 🟦
+			<color:#ffffff><size:14>**Match (match_id)**:  🟥 **(player_1_name)** - #(seed) **6** - 0 **(player_2_name)** - #(seed) 🟦 /' if match is completed '/
 			/' rest of matches '/.
 		}
 		.
 		= <color:#ffffff>✏️ PUT
 		{+
-			== <color:#ffffff>✅ Successfully fetched matches for VNMC(year)!	
+			<b><color:#ffffff><size:16>✅ Successfully fetched matches for VNMC(year)!</b>
 		}
 	}
 @endsalt

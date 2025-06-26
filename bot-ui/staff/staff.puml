@@ -7,26 +7,26 @@
 	{
 		= <color:#ffffff>🔍 GET
 		{+
-			==== <color:#ffffff>VNMC(year) - Staff List
+			<b><color:#ffffff><size:14>VNMC(year) - Staff List</b>
 			.
-			<color:#ffffff>**(role)**
-			*<color:#ffffff>(name)
+			<color:#ffffff><size:14>**(role)**
+			*<color:#ffffff><size:14>(name)
 			/' rest of roles and members '/ .
 		}
 		.
 		= <color:#ffffff>📄 POST
 		{+
-			== <color:#ffffff>✅ Successfully registered new (full_staff_role) to (player_name)!
+			<b><color:#ffffff><size:16>✅ Successfully registered new (full_staff_role) to (player_name)!</b>
 		}
 		.
 		= <color:#ffffff>✏️ PUT
 		{+
-			== <color:#ffffff>✅ Successfully switched (player_name)'s role to (new_full_staff_role) from (old_full_staff_role)!	
+			<b><color:#ffffff><size:16>✅ Successfully switched (player_name)'s role to (new_full_staff_role) from (old_full_staff_role)!	</b>
 		}
 		.
 		= <color:#ffffff>🗑️ DELETE
 		{+
-			== <color:#ffffff>✅ Successfully deleted (full_staff_role) role for (player_name)!
+			<b><color:#ffffff><size:16>✅ Successfully deleted (full_staff_role) role for (player_name)!</b>
 		}
 	}
 @endsalt

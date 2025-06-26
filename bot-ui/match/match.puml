@@ -7,27 +7,27 @@
 	{
 		= <color:#ffffff>🔍 GET
 		{+
-			==== <color:#ffffff>VNMC(year) - (full_round_name) - Match (match_id)
+			<b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Match (match_id)</b>
 			.
 			<color:#ffffff>🟥 **(player_1_name)** - #(seed) (time - remaining_time) **(player_2_name)** - #(seed) 🟦
 			<color:#ffffff>🟥 **(player_1_name)** - #(seed) **6** - 0 **(player_2_name)** - #(seed) 🟦 /' if match is completed '/
 			.
-			<color:#ffffff>**Referee**: (referee_name)
+			<color:#ffffff><size:12>Referee: (referee_name)
 		}
 		.
 		= <color:#ffffff>✏️ PUT /ref
 		{+
-			== <color:#ffffff>✅ Successfully assigned referee (referee_name) to match (match_id)!
+			<b><color:#ffffff><size:16>✅ Successfully assigned referee (referee_name) to match (match_id)!</b>
 		}
 		.
 		= <color:#ffffff>🗑️ DELETE /ref
 		{+
-			== <color:#ffffff>✅ Successfully removed referee for match (match_id)!
+			<b><color:#ffffff><size:16>✅ Successfully removed referee for match (match_id)!</b>
 		}
 		.
 		= <color:#ffffff>✏️ PUT /time
 		{+
-			== <color:#ffffff>✅ Successfully rescheduled match (match_id) to (new_time)!
+			<b><color:#ffffff><size:16>✅ Successfully rescheduled match (match_id) to (new_time)!</b>
 		}
 	}
 @endsalt
