@@ -9,15 +9,28 @@
 		{+
 			<b><color:#ffffff><size:14>VNMC(year) - (full_round_name) Mappool</b>
 			.
-			<color:#ffffff><back:#6fa8dc><color:#000000>**(code)**</back> - (title) [(diff_name)]
+			<b><color:#ffffff>🍚 RC maps:</b>
+			.
+			<color:#ffffff>**(code)** - <color:#4c8cda>__(title) [(diff_name)]__
+			<color:#ffffff>**(code)** - <color:#4c8cda>__(title) [(diff_name)]__
 			/' rest of RC maps '/ .
-			<color:#ffffff><back:#8e7cc3><color:#000000>**(code)**</back> - (title) [(diff_name)]
+			<b><color:#ffffff>🍲 HB maps:</b>
+			.
+			<color:#ffffff>**(code)** - <color:#4c8cda>__(title) [(diff_name)]__
+			<color:#ffffff>**(code)** - <color:#4c8cda>__(title) [(diff_name)]__
 			/' rest of HB maps '/ .
-			<color:#ffffff><back:#ffd966><color:#000000>**(code)**</back> - (title) [(diff_name)]
+			<b><color:#ffffff>🍜 LN maps:</b>
+			.
+			<color:#ffffff>**(code)** - <color:#4c8cda>__(title) [(diff_name)]__
+			<color:#ffffff>**(code)** - <color:#4c8cda>__(title) [(diff_name)]__
 			/' rest of LN maps '/ .
-			<color:#ffffff><back:#e06666><color:#000000>**(code)**</back> - (title) [(diff_name)]
+			<b><color:#ffffff>🎶 SV Maps:</b>
+			.
+			<color:#ffffff>**(code)** - <color:#4c8cda>__(title) [(diff_name)]__
+			<color:#ffffff>**(code)** - <color:#4c8cda>__(title) [(diff_name)]__
 			/' rest of SV maps '/ .
-			<color:#ffffff><back:#d9d9d9><color:#000000>**(code)**</back> - (title) [(diff_name)]
+			<b><color:#ffffff>🔥 Tiebreaker:</b>
+			<color:#ffffff>**(code)** - <color:#4c8cda>__(title) [(diff_name)]__
 		}
 		.
 		= <color:#ffffff>📄 POST
