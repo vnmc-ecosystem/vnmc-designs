@@ -9,8 +9,26 @@
 		{+
 			<b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Match (match_id)</b>
 			.
-			<color:#ffffff>🟥 **(player_1_name)** - #(seed) (time - remaining_time) **(player_2_name)** - #(seed) 🟦
-			<color:#ffffff>🟥 **(player_1_name)** - #(seed) **6** - 0 **(player_2_name)** - #(seed) 🟦 /' if match is completed '/
+			<b><color:#4c8cda><size:16>__(player_1_name) VS (player_2_name)__</b>
+			.
+			<color:#ffffff><back:#323336>M/dd/yyyy h:mm a <color:#ffffff><back:#323336>... ago /' discord's US formatting. for notation definitions refer: https://date-fns.org/v4.1.0/docs/format '/
+			.
+			<b><color:#ffffff><size:14>📊 Results</b>
+			<color:#4c8cda><size:14>🟥 __(player_1_name)__ <color:#ffffff>(#seed) **6** - 0 <color:#4c8cda>__(player_2_name)__ <color:#ffffff>(#seed) 🟦
+			.
+			<b><color:#ffffff><size:14>🎲 Rolls</b>
+			<color:#4c8cda><size:14>🟥 __(player_1_name)__ <color:#ffffff>(#seed) 69 - **96** <color:#4c8cda>__(player_2_name)__ <color:#ffffff>(#seed) 🟦
+			<color:#ffffff><size:14>🟦 chose to protect second.
+			.
+			<b><color:#ffffff><size:14>🚫🛡️ Protect and Ban Phase</b>
+			<color:#ffffff><size:14>🟥 protects (code)
+			<color:#ffffff><size:14>🟦 bans (code)
+			/' rest of protects and bans '/
+			.
+			<b><color:#ffffff><size:14>⚔️ Match Rundown</b>
+			<color:#ffffff><size:14>🟥 picked (code) >> 🟥 won
+			<color:#ffffff><size:14>🟦 picked (code) >> 🟥 won
+			/' rest of picks '/
 			.
 			<color:#ffffff><size:12>Referee: (referee_name)
 		}
