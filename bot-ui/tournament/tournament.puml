@@ -7,7 +7,7 @@
 	{
 		= <color:#ffffff>📄 POST
 		{+
-			<b><color:#ffffff><size:16>✅ Successfully created tournament VNMC(year)!</b>
+			<b><color:#ffffff><size:16>✅ Successfully created tournament VNMC(year)!
 		}
 	}
 @endsalt

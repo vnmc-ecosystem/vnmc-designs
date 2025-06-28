@@ -7,21 +7,21 @@
 	{
 		= <color:#ffffff>🔍 GET
 		{+
-			<b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Stats</b>
+			<b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Stats
 			.
-			<b><color:#4c8cda><size:16>__(stats_link)__</b>
+			<b><color:#4c8cda><size:16>__(stats_link)__
 			.
 			<color:#ffffff><size:12>Snapshot generated at: (snapshot_time)
 		}
 		.
 		= <color:#ffffff>✏️ PUT /reveal /' toggle ON '/
 		{+
-			<b><color:#ffffff><size:16>✅ Qualifier results online!</b>
+			<b><color:#ffffff><size:16>✅ Qualifier results online!
 		}
 		.
 		= <color:#ffffff>✏️ PUT /reveal /' toggle OFF '/
 		{+
-			<b><color:#ffffff><size:16>✅ Qualifier results hidden!</b>
+			<b><color:#ffffff><size:16>✅ Qualifier results hidden!
 		}
 	}
 @endsalt

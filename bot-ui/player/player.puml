@@ -7,7 +7,7 @@
 	{
 		= <color:#ffffff>🔍 GET
 		{+
-			<b><color:#ffffff><size:14>VNMC(year) - Player List</b>
+			<b><color:#ffffff><size:14>VNMC(year) - Player List
 			.
 			*<color:#ffffff><size:14>**(name)** - ((#rank))
 			/' rest of players '/ .
@@ -15,12 +15,12 @@
 		.
 		= <color:#ffffff>📄 POST
 		{+
-			<b><color:#ffffff><size:16>✅ Successfully registered for VNMC(year) as (player_name)!</b>
+			<b><color:#ffffff><size:16>✅ Successfully registered for VNMC(year) as (player_name)!
 		}
 		.
 		= <color:#ffffff>🗑️ DELETE
 		{+
-			<b><color:#ffffff><size:16>✅ Successfully left the tournament.</b>
+			<b><color:#ffffff><size:16>✅ Successfully left the tournament.
 			.
 			<color:#ffffff><size:14>We are so sad to see you leave 😭😭😭
 		}

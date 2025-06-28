@@ -5,7 +5,7 @@
 		}
 	</style>
 	{+
-		<b><color:#ffffff><size:16>❌ Error occurred!</b>
+		<b><color:#ffffff><size:16>❌ Error occurred!
 		.
 		<color:#ffffff><size:14>(error_code) - (reason)
 		.

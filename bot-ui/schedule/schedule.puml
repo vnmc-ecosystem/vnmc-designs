@@ -7,7 +7,7 @@
 	{
 		= <color:#ffffff>🔍 GET
 		{+
-			<b><color:#ffffff><size:14>VNMC(year) - Tournament Schedule</b>
+			<b><color:#ffffff><size:14>VNMC(year) - Tournament Schedule
 			.
 			<color:#ffffff><size:14>**(event_name)**: (event_start_time) - (event_end_time)
 			/' rest of schedules '/ .
@@ -15,7 +15,7 @@
 		.
 		= <color:#ffffff>📄 POST
 		{+
-			<b><color:#ffffff><size:16>✅ Successfully added new schedule for VNMC(year)!</b>
+			<b><color:#ffffff><size:16>✅ Successfully added new schedule for VNMC(year)!
 			.
 			<color:#ffffff><size:14>**Event Name**: (event_name)
 			<color:#ffffff><size:14>**Start Time**: (event_start_time)
@@ -24,7 +24,7 @@
 		.
 		= <color:#ffffff>✏️ PUT
 		{+
-			<b><color:#ffffff><size:16>✅ Successfully updated schedule for VNMC(year)!</b>
+			<b><color:#ffffff><size:16>✅ Successfully updated schedule for VNMC(year)!
 			.
 			<color:#ffffff><size:14>**Updated Event Name**: (event_name)
 			<color:#ffffff><size:14>**New Start Time**: (event_start_time)
@@ -33,7 +33,7 @@
 		.
 		= <color:#ffffff>🗑️ DELETE
 		{+
-			<b><color:#ffffff><size:16>✅ Successfully deleted schedule (event_name) for VNMC(year)!</b>
+			<b><color:#ffffff><size:16>✅ Successfully deleted schedule (event_name) for VNMC(year)!
 		}
 	}
 @endsalt
