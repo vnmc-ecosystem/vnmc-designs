@@ -7,7 +7,7 @@
 	{
 		= <color:#ffffff>🔍 GET - Strip color <color:#c1c0c0><size:16>#c1c0c0
 		{+
-			<b><color:#ffffff><size:14>VNMC(year) - Final Standings
+			<back:#242429>[<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - Final Standings]
 			.
 			<color:#ffffff><size:14>🥇 **(player_name)**
 			<color:#ffffff><size:14>🥈 **(player_name)**
