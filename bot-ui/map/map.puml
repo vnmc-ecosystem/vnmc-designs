@@ -5,7 +5,7 @@
 		}
 	</style>
 	{
-		= <color:#ffffff>🔍 GET
+		= <color:#ffffff>🔍 GET - Strip color <color:#c1c0c0><size:16>#c1c0c0
 		{+
 			<b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - (code) {<img:https://dummyimage.com/150x50/ffffff/000000&text=(map_img)>}
 			<b><color:#4c8cda><size:16>__(title) [(diff_name)]__
@@ -19,7 +19,7 @@
 			<color:#ffffff><size:14>**Length**: (mm:ss) /' use drain time '/
 		}
 		.
-		= <color:#ffffff>📄 POST
+		= <color:#ffffff>📄 POST - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully added new map to pool (full_round_name)!
 			.
@@ -27,14 +27,14 @@
 			<color:#ffffff><size:14>**Map ID**: (id)
 		}
 		.
-		= <color:#ffffff>✏️ PUT
+		= <color:#ffffff>✏️ PUT - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully updated map (code) in pool (full_round_name)!
 			.
 			<color:#ffffff><size:14>**New Map ID**: (id)
 		}
 		.
-		= <color:#ffffff>🗑️ DELETE
+		= <color:#ffffff>🗑️ DELETE - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully deleted map (code) in pool (full_round_name)!</b>
 		}

@@ -5,7 +5,7 @@
 		}
 	</style>
 	{
-		= <color:#ffffff>🔍 GET
+		= <color:#ffffff>🔍 GET - Strip color <color:#c1c0c0><size:16>#c1c0c0
 		{+
 			<b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Match List
 			.
@@ -14,7 +14,7 @@
 			/' rest of matches '/.
 		}
 		.
-		= <color:#ffffff>✏️ PUT
+		= <color:#ffffff>✏️ PUT - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully fetched matches for VNMC(year)!
 		}

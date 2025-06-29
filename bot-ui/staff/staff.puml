@@ -5,7 +5,7 @@
 		}
 	</style>
 	{
-		= <color:#ffffff>🔍 GET
+		= <color:#ffffff>🔍 GET - Strip color <color:#c1c0c0><size:16>#c1c0c0
 		{+
 			<b><color:#ffffff><size:14>VNMC(year) - Staff List
 			.
@@ -14,17 +14,17 @@
 			/' rest of roles and members '/ .
 		}
 		.
-		= <color:#ffffff>📄 POST
+		= <color:#ffffff>📄 POST - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully registered new (full_staff_role) to (player_name)!
 		}
 		.
-		= <color:#ffffff>✏️ PUT
+		= <color:#ffffff>✏️ PUT - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully switched (player_name)'s role to (new_full_staff_role) from (old_full_staff_role)!
 		}
 		.
-		= <color:#ffffff>🗑️ DELETE
+		= <color:#ffffff>🗑️ DELETE - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully deleted (full_staff_role) role for (player_name)!
 		}

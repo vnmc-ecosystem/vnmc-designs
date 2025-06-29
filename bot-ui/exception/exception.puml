@@ -4,11 +4,14 @@
 			BackgroundColor #242429
 		}
 	</style>
-	{+
-		<b><color:#ffffff><size:16>❌ Error occurred!
-		.
-		<color:#ffffff><size:14>(error_code) - (reason)
-		.
-		<color:#ffffff><size:14>(error_message)
+	{
+		= <color:#ffffff>Strip color <color:#dd2f45><size:16>#dd2f45
+		{+
+			<b><color:#ffffff><size:16>❌ Error occurred!
+			.
+			<color:#ffffff><size:14>(error_code) - (reason)
+			.
+			<color:#ffffff><size:14>(error_message)
+		}
 	}
 @endsalt

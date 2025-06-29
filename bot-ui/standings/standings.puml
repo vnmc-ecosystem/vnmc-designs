@@ -5,7 +5,7 @@
 		}
 	</style>
 	{
-		= <color:#ffffff>🔍 GET
+		= <color:#ffffff>🔍 GET - Strip color <color:#c1c0c0><size:16>#c1c0c0
 		{+
 			<b><color:#ffffff><size:14>VNMC(year) - Final Standings
 			.

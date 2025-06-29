@@ -5,7 +5,7 @@
 		}
 	</style>
 	{
-		= <color:#ffffff>📄 POST
+		= <color:#ffffff>📄 POST - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully created tournament VNMC(year)!
 		}

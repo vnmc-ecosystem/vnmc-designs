@@ -5,16 +5,19 @@
 		}
 	</style>
 	{
+		= <color:#ffffff>Strip color <color:#ffac33><size:16>#ffac33
 		{+
 			<b><color:#ffffff><size:16>Please follow this link: <color:#4c8cda>__(auth_link)__ <color:#ffffff>and click on the **Authorize** button.
 			.
 			<color:#ffffff><size:14>⏳ Waiting for authentication...
 		}
 		.
+		= <color:#ffffff>Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully authenticated as (player_name)!
 		}
 		.
+		= <color:#ffffff>Strip color <color:#dd2f45><size:16>#dd2f45
 		{+
 			<b><color:#ffffff><size:16>❌ Authentication failed. Please try again.
 		}

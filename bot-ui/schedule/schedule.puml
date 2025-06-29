@@ -5,7 +5,7 @@
 		}
 	</style>
 	{
-		= <color:#ffffff>🔍 GET
+		= <color:#ffffff>🔍 GET - Strip color <color:#c1c0c0><size:16>#c1c0c0
 		{+
 			<b><color:#ffffff><size:14>VNMC(year) - Tournament Schedule
 			.
@@ -13,7 +13,7 @@
 			/' rest of schedules '/ .
 		}
 		.
-		= <color:#ffffff>📄 POST
+		= <color:#ffffff>📄 POST - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully added new schedule for VNMC(year)!
 			.
@@ -22,7 +22,7 @@
 			<color:#ffffff><size:14>**End Time**: (event_end_time)
 		}
 		.
-		= <color:#ffffff>✏️ PUT
+		= <color:#ffffff>✏️ PUT - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully updated schedule for VNMC(year)!
 			.
@@ -31,7 +31,7 @@
 			<color:#ffffff><size:14>**New End Time**: (event_end_time)
 		}
 		.
-		= <color:#ffffff>🗑️ DELETE
+		= <color:#ffffff>🗑️ DELETE - Strip color <color:#77b255><size:16>#77b255
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully deleted schedule (event_name) for VNMC(year)!
 		}
