@@ -9,7 +9,7 @@
 		{+
 			<back:#242429>[<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - Tournament Schedule]
 			.
-			<color:#ffffff><size:14>**(event_name)**: (event_start_time) - (event_end_time)
+			<color:#ffffff><size:14>**(event_name)**: <back:#323336>M/dd/yyyy</back> - <back:#323336>M/dd/yyyy
 			/' rest of schedules '/ .
 		}
 		.
@@ -18,8 +18,8 @@
 			<b><color:#ffffff><size:16>✅ Successfully added new schedule for VNMC(year)!
 			.
 			<color:#ffffff><size:14>**Event Name**: (event_name)
-			<color:#ffffff><size:14>**Start Time**: (event_start_time)
-			<color:#ffffff><size:14>**End Time**: (event_end_time)
+			<color:#ffffff><size:14>**Start Time**: <back:#323336>M/dd/yyyy
+			<color:#ffffff><size:14>**End Time**: <back:#323336>M/dd/yyyy
 		}
 		.
 		= <color:#ffffff>✏️ PUT - Strip color <color:#77b255><size:16>#77b255
@@ -27,8 +27,8 @@
 			<b><color:#ffffff><size:16>✅ Successfully updated schedule for VNMC(year)!
 			.
 			<color:#ffffff><size:14>**Updated Event Name**: (event_name)
-			<color:#ffffff><size:14>**New Start Time**: (event_start_time)
-			<color:#ffffff><size:14>**New End Time**: (event_end_time)
+			<color:#ffffff><size:14>**New Start Time**: <back:#323336>M/dd/yyyy
+			<color:#ffffff><size:14>**New End Time**: <back:#323336>M/dd/yyyy
 		}
 		.
 		= <color:#ffffff>🗑️ DELETE - Strip color <color:#77b255><size:16>#77b255

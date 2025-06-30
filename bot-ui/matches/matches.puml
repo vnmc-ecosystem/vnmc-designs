@@ -9,8 +9,8 @@
 		{+
 			<back:#242429>[<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Match List]
 			.
-			<color:#ffffff><size:14>**Match (match_id)**:  🟥 **(player_1_name)** - #(seed) (time - remaining_time) **(player_2_name)** - #(seed) 🟦
-			<color:#ffffff><size:14>**Match (match_id)**:  🟥 **(player_1_name)** - #(seed) **6** - 0 **(player_2_name)** - #(seed) 🟦 /' if match is completed '/
+			<color:#ffffff><size:14>**Match (match_id)**:  🟥 **(player_1_name)** - #(seed) <back:#323336>M/dd/yyyy h:mm a</back> **(player_2_name)** #(seed) 🟦 /' discord's US formatting. for notation definitions refer: https://date-fns.org/v4.1.0/docs/format '/
+			<color:#ffffff><size:14>**Match (match_id)**:  🟥 **(player_1_name)** - #(seed) **6** - 0 **(player_2_name)** #(seed) 🟦 /' if match is completed '/
 			/' rest of matches '/.
 		}
 		.
