@@ -7,7 +7,7 @@
 	{
 		= <color:#ffffff>🔍 GET - Strip color <color:#c1c0c0><size:16>#c1c0c0
 		{+
-			<back:#242429>[<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Match List]
+			<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Match List
 			.
 			<color:#ffffff><size:14>**Match (match_id)**:  🟥 <color:#4c8cda>__(player_1_name)__ <color:#ffffff>(#seed) <back:#323336>M/dd/yyyy h:mm a</back> <color:#4c8cda>__(player_2_name)__ <color:#ffffff>(#seed) 🟦 /' discord's US formatting. for notation definitions refer: https://date-fns.org/v4.1.0/docs/format '/
 			<color:#ffffff><size:14>**Match (match_id)**:  🟥 <color:#4c8cda>__(player_1_name)__ <color:#ffffff>(#seed) **6** - 0 <color:#4c8cda>__(player_2_name)__ <color:#ffffff>(#seed) 🟦 /' if match is completed '/

@@ -7,7 +7,7 @@
 	{
 		= <color:#ffffff>🔍 GET - Strip color <color:#c1c0c0><size:16>#c1c0c0
 		{+
-			<back:#242429>[<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Match (match_id)]
+			<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Match (match_id)
 			.
 			<b><color:#4c8cda><size:16>__(player_1_name) VS (player_2_name)__
 			.

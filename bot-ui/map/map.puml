@@ -7,7 +7,7 @@
 	{
 		= <color:#ffffff>🔍 GET - Strip color <color:#c1c0c0><size:16>#c1c0c0
 		{+
-			<back:#242429>[<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - (code) {<img:https://dummyimage.com/150x50/ffffff/000000&text=(map_img)>}]
+			<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - (code) {<img:https://dummyimage.com/150x50/ffffff/000000&text=(map_img)>}
 			<b><color:#4c8cda><size:16>__(title) [(diff_name)]__
 			.
 			<color:#ffffff><size:14>(artist)

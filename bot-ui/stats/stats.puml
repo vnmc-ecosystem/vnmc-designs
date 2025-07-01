@@ -7,7 +7,7 @@
 	{
 		= <color:#ffffff>🔍 GET - Strip color <color:#c1c0c0><size:16>#c1c0c0
 		{+
-			<back:#242429>[<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Stats]
+			<img:../logo.png>    <b><color:#ffffff><size:14>VNMC(year) - (full_round_name) - Stats
 			.
 			<b><color:#4c8cda><size:16>__(stats_link)__
 			.
