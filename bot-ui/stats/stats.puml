@@ -11,7 +11,7 @@
 			.
 			<b><color:#4c8cda><size:16>__(stats_link)__
 			.
-			<color:#ffffff><size:12>Snapshot generated at: (snapshot_time)
+			<color:#ffffff><size:12>Snapshot generated • (snapshot_time)
 		}
 		.
 		= <color:#ffffff>✏️ PUT /reveal - Strip color <color:#77b255><size:16>#77b255 /' toggle ON '/
