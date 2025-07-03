@@ -25,3 +25,12 @@ RefId:
         properties:
           ref_id:
             type: string
+TopCut:
+  required: true
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          top_cut:
+            type: string
