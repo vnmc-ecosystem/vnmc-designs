@@ -33,4 +33,4 @@ TopCut:
         type: object
         properties:
           top_cut:
-            type: string
+            type: number
