@@ -147,7 +147,7 @@ package vnmc <<Database>> {
 	package sessions {
 		abstract session_id as "_id" <<string>> #a9dcdf
 		abstract auth_time <<Date>>
-		entity discord_id
+		note right of session_id : Discord ID
 	}
 
 	package scores {
@@ -167,7 +167,7 @@ package vnmc <<Database>> {
 		}
 	}
 
-	entity TTL {
+	interface TTL {
 		value: 1 day
 	}
 }
@@ -212,7 +212,6 @@ standings -[#add1b2]- PlayerId
 
 
 
-session_id .. discord_id
 user_fetch_time .. TTL
 map_fetch_time .. TTL
 auth_time .. TTL
