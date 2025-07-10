@@ -192,11 +192,11 @@ Map::id -[#add1b2]- MapId
 
 matches -- diamond2
 diamond2 -[#add1b2]- MatchId : qual
-diamond2 -[#add1b2]- NoBracketMatch : first round and gf
+diamond2 -[#add1b2]- NoBracketMatch : first round and single elim matches
 diamond2 -[#add1b2]- BracketMatch
 NoBracketMatch -[#add1b2]- Match
 BracketMatch -- diamond3
-diamond3 -[#add1b2]- Match : winners brac and losers brac first round
+diamond3 -[#add1b2]- Match : winners brac, losers brac first round and gf
 diamond3 -[#add1b2]- LegMatch : all other losers brac matches
 LegMatch -[#add1b2]- Match
 Match::match_id -[#add1b2]- MatchId
