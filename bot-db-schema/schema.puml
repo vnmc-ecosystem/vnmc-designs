@@ -88,8 +88,8 @@ package vnmc <<Database>> {
 			player2_id: <<PlayerId>>
 			player2_seed: <<int32>>
 			player2_score: <<int32>>
-			match_time: <<int64>>
-			referee: <<PlayerId>>
+			match_time?: <<int64>>
+			referee?: <<PlayerId>>
 		}
 		class MatchId <<string>>
 		enum Bracket {
