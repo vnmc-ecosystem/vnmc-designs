@@ -11,8 +11,8 @@ package vnmc <<Database>> {
 			time: <<Time[]>>
 		}
 		class Time {
-			start: <<int64>>
-			end: <<int64>>
+			start: <<int32>>
+			end: <<int32>>
 		}
 
 		abstract schedules <<Record<Event, Schedule>>>
