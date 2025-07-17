@@ -53,7 +53,6 @@ package vnmc <<Database>> {
 		}
 		<> diamond1
 		class NonQualifierPool <<Record<Category, Map[]>>
-		class MapId <<string>>
 		enum Round {
 			"qual"
 			"ro64"
@@ -91,7 +90,6 @@ package vnmc <<Database>> {
 			match_time?: <<int64>>
 			referee?: <<PlayerId>>
 		}
-		class MatchId <<string>>
 		enum Bracket {
 			"winners"
 			"losers"
@@ -120,7 +118,6 @@ package vnmc <<Database>> {
 		abstract qual_stats_hidden <<boolean>>
 		abstract top_cut <<int32>>
 
-		class PlayerId <<string>>
 	}
 
 	package beatmaps {
@@ -170,6 +167,11 @@ package vnmc <<Database>> {
 	interface TTL {
 		value: 1 day
 	}
+
+	/' foreign keys used by multiple fields '/
+	class MapId <<string>>
+	class MatchId <<string>>
+	class PlayerId <<string>>
 }
 
 registration_prop -[#add1b2]- Registration
