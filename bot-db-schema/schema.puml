@@ -38,11 +38,11 @@ package vnmc <<Database>> {
 			"cohost"
 			"designer"
 			"referee"
-			"mappoolers"
-			"mappers"
-			"playtesters"
-			"streamers"
-			"commentators"
+			"mappooler"
+			"mapper"
+			"playtester"
+			"streamer"
+			"commentator"
 			"statistician"
 		}
 
