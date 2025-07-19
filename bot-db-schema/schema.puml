@@ -44,6 +44,11 @@ package vnmc <<Database>> {
 			"streamer"
 			"commentator"
 			"statistician"
+			"spreadsheeter"
+			"consultant"
+			"storyboarder"
+			"map_description_writer"
+			"lore_builder"
 		}
 
 		abstract mappool <<Record<Round, Map[] | NonQualifierPool>>>
