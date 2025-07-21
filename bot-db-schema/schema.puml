@@ -3,6 +3,7 @@
 package vnmc <<Database>> {
 	package tournaments {
 		abstract tournament_id as "_id" <<int32>> #a9dcdf
+		abstract abbr <<string>>
 		abstract year <<int32>>
 
 		abstract registration_prop as "registration" <<Registration[]>>
