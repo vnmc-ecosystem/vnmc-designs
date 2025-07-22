@@ -144,6 +144,7 @@ package vnmc <<Database>> {
 		abstract user_id as "_id" <<string>> #a9dcdf
 		abstract username <<string>>
 		abstract rank <<int32>>
+		abstract country_flag <<string>>
 		abstract user_fetch_time as "fetch_time" <<Date>>
 	}
 
