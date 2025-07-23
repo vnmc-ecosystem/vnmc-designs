@@ -85,11 +85,9 @@ package vnmc <<Database>> {
 		class LegMatch <<Record<Leg, Match[]>>
 		class Match {
 			match_id?: <<MatchId>>
-			player1_name: <<string>>
 			player1_id: <<PlayerId>>
 			player1_seed: <<int32>>
 			player1_score: <<int32>>
-			player2_name: <<string>>
 			player2_id: <<PlayerId>>
 			player2_seed: <<int32>>
 			player2_score: <<int32>>
