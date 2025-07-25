@@ -148,6 +148,7 @@ package vnmc <<Database>> {
 
 	package sessions {
 		abstract session_id as "_id" <<string>> #a9dcdf
+		abstract osu_id <<string>>
 		abstract auth_time <<Date>>
 		note right of session_id : Discord ID
 	}
