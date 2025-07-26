@@ -119,9 +119,8 @@ package vnmc <<Database>> {
 			"top64"
 		}
 
-		abstract qual_stats_hidden <<boolean>>
+		abstract qual_seeding_reveal <<int64>>
 		abstract top_cut <<int32>>
-
 	}
 
 	package beatmaps {
