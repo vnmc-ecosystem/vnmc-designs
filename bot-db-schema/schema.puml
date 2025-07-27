@@ -95,13 +95,14 @@ package vnmc <<Database>> {
 			referee?: <<PlayerId>>
 		}
 		enum Bracket {
-			"winners"
 			"losers"
+			"winners"
 		}
 		enum Leg {
 			"leg1"
 			"leg2"
 		}
+		note right of Bracket : losers always\nbefore winners\ndue to challonge\nmatchorder
 
 		abstract standings <<Record<Ranking, PlayerId[]>>
 		enum Ranking {
