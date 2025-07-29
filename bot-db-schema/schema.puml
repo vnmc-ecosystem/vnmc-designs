@@ -6,15 +6,7 @@ package vnmc <<Database>> {
 		abstract abbr <<string>>
 		abstract year <<int32>>
 
-		abstract registration_prop as "registration" <<Registration[]>>
-		class Registration {
-			osu_id: <<PlayerId>>
-			time: <<Time[]>>
-		}
-		class Time {
-			start: <<int32>>
-			end: <<int32>>
-		}
+		abstract registration_prop as "registration" <<PlayerId[]>>
 
 		abstract schedules <<Record<Event, Schedule>>>
 		class Schedule {
@@ -170,6 +162,15 @@ package vnmc <<Database>> {
 		}
 	}
 
+	package available_times {
+		abstract user_id_times as "_id" <<string>> #a9dcdf
+		abstract time_slots <<TimeSlot[]>>
+		class TimeSlot {
+			from: <<int32>>
+			to <<int32>>
+		}
+	}
+
 	interface TTL {
 		value: 1 day
 	}
@@ -180,9 +181,7 @@ package vnmc <<Database>> {
 	class PlayerId <<string>>
 }
 
-registration_prop -[#add1b2]- Registration
-Registration::osu_id -[#add1b2]- PlayerId
-Registration::time -[#add1b2]- Time
+registration_prop -[#add1b2]- PlayerId
 
 schedules -[#add1b2]- Schedule
 schedules -[#eb937f]- Event
@@ -233,8 +232,13 @@ ScoreList -[#add1b2]- Score
 
 
 
+time_slots -[#add1b2]- TimeSlot
+
+
+
 MapId ..> beatmap_id
 PlayerId ..> user_id
 tournament_id ..> score_id
+PlayerId ..> user_id_times
 
 @enduml
