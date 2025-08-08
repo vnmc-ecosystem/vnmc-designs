@@ -2,6 +2,8 @@
 Mappool:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     round:
@@ -22,6 +24,8 @@ Mappool:
 Map:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     round:
@@ -54,6 +58,8 @@ Map:
 Schedule:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     events:
@@ -70,6 +76,8 @@ Schedule:
 Standings:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     standings:  
@@ -150,6 +158,8 @@ Standings:
 Player:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     players:
@@ -166,6 +176,8 @@ Player:
 Staff:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     staffs:
@@ -264,6 +276,8 @@ Staff:
 Match:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     round:
@@ -293,6 +307,8 @@ Match:
 Matches:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     round:
@@ -329,6 +345,8 @@ Stats: # add stats object?
 TournamentAdd:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
 MappoolMutation:
@@ -348,6 +366,8 @@ MapMutation:
 ScheduleCreateUpdate:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     event_name:
@@ -359,6 +379,8 @@ ScheduleCreateUpdate:
 ScheduleDelete:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     event_name:
@@ -366,6 +388,8 @@ ScheduleDelete:
 PlayerRegistration:
   type: object
   properties:
+    abbr:
+      type: string
     year:
       type: number
     username:
