@@ -192,7 +192,7 @@ Staff:
                 type: string
               url:
                 type: string
-        coHost:
+        cohost:
           type: array
           items:
             type: object
@@ -219,7 +219,7 @@ Staff:
                 type: string
               url:
                 type: string
-        mappoolers:
+        mappooler:
           type: array
           items:
             type: object
@@ -228,7 +228,7 @@ Staff:
                 type: string
               url:
                 type: string
-        mappers:
+        mapper:
           type: array
           items:
             type: object
@@ -237,7 +237,7 @@ Staff:
                 type: string
               url:
                 type: string
-        playtesters:
+        playtester:
           type: array
           items:
             type: object
@@ -246,7 +246,7 @@ Staff:
                 type: string
               url:
                 type: string
-        streamers:
+        streamer:
           type: array
           items:
             type: object
@@ -255,7 +255,7 @@ Staff:
                 type: string
               url:
                 type: string
-        commentators:
+        commentator:
           type: array
           items:
             type: object
@@ -265,6 +265,51 @@ Staff:
               url:
                 type: string
         statistician:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        spreadsheeter:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        consultant:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        storyboarder:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        map_description_writer:
+          type: array
+          items:
+            type: object
+            properties:
+              username:
+                type: string
+              url:
+                type: string
+        lore_builder:
           type: array
           items:
             type: object
