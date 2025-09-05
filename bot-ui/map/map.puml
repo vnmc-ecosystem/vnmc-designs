@@ -17,6 +17,8 @@
 			<color:#ffffff><size:14>**OD**: (od)
 			<color:#ffffff><size:14>**HP**: (hp)
 			<color:#ffffff><size:14>**Length**: (mm:ss) /' use drain time '/
+			.
+			<color:#ffffff><size:12>Map Pattern: (pattern)
 		}
 		.
 		= <color:#ffffff>📄 POST - Strip color <color:#77b255><size:16>#77b255
