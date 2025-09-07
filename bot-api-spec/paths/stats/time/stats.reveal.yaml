@@ -1,0 +1,14 @@
+put:
+  summary: /stats/time
+  responses:
+    '200':
+      description: Seed reveal time updated
+      content:
+        application/json:
+          schema:
+            $ref: '../../../components/schemas.yaml#/StatsTimeUpdate'
+      
+    '500':
+      $ref: '../../../components/responses.yaml#/InternalServerError'
+  requestBody:
+    $ref: '../../../components/requestBodies.yaml#/Time'

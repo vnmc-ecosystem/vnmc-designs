@@ -545,6 +545,11 @@ MatchesUpdate:
   properties:
     year:
       type: number
+StatsTimeUpdate:
+  type: object
+  properties:
+    time:
+      type: number
 
 
 

@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
   <diagram name="Page-1" id="Ie6zT4B1BSGbGUJqss4R">
-    <mxGraphModel dx="1902" dy="3747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1350" dy="3435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -642,7 +642,7 @@
         <mxCell id="OgWKlECrtsOPi22Th0ey-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="EGReewrqneR2WTqJuPq--91" target="OgWKlECrtsOPi22Th0ey-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EGReewrqneR2WTqJuPq--91" value="/toggle-seed-reveal" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#000000;fillColor=#67AB9F;" parent="1" vertex="1">
+        <mxCell id="EGReewrqneR2WTqJuPq--91" value="/set-reveal-time" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#000000;fillColor=#67AB9F;" parent="1" vertex="1">
           <mxGeometry x="3090" y="-1720" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HE2thZA_2mZJquEUhGNp-1" value="generate a static page" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;fontSize=16;" parent="1" vertex="1">
@@ -787,7 +787,7 @@
         <mxCell id="OgWKlECrtsOPi22Th0ey-14" value="host only" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="3210" y="-1640" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="OgWKlECrtsOPi22Th0ey-15" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;PUT /stats/reveal&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#99FFFF;fontColor=#000000;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="1" vertex="1">
+        <mxCell id="OgWKlECrtsOPi22Th0ey-15" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;PUT /stats/time&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#99FFFF;fontColor=#000000;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="3060" y="-2250" width="180" height="90" as="geometry" />
         </mxCell>
         <mxCell id="OgWKlECrtsOPi22Th0ey-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;flowAnimation=1;strokeColor=#99FFFF;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#000000;labelBackgroundColor=default;endArrow=classic;" parent="1" source="OgWKlECrtsOPi22Th0ey-18" target="OgWKlECrtsOPi22Th0ey-15" edge="1">
