@@ -66,6 +66,7 @@ package vnmc <<Database>> {
 			"HB"
 			"LN"
 			"SV"
+			"EX"
 			"TB"
 		}
 

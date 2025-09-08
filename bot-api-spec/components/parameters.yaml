@@ -41,7 +41,7 @@ MapCode:
   required: true
   schema:
     type: string
-    pattern: ^(?:[1-5]|(?:RC[1-7]|LN[1-4]|HB[1-3]|SV[1-2])|TB)$
+    pattern: ^(?:[1-5]|(?:RC[1-7]|LN[1-4]|HB[1-3]|SV[1-2]|EX[1-2])|TB)$
 Id:
   name: id
   in: path
