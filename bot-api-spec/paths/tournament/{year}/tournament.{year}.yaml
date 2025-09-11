@@ -16,4 +16,4 @@ post:
     '500':
       $ref: '../../../components/responses.yaml#/InternalServerError'
   requestBody:
-    $ref: '../../../components/requestBodies.yaml#/TopCut'
+    $ref: '../../../components/requestBodies.yaml#/NewTournament'

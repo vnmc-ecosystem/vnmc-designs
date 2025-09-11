@@ -25,12 +25,14 @@ RefId:
         properties:
           ref_id:
             type: string
-TopCut:
+NewTournament:
   required: true
   content:
     application/json:
       schema:
         type: object
         properties:
+          abbr:
+            type: string
           top_cut:
             type: number
