@@ -47,5 +47,21 @@
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully rescheduled match (match_id) to (new_time)!
 		}
+		.
+		= <color:#ffffff>Modal for PUT /time
+		{+
+			<img:../logo.png>  <b><color:#ffffff><size:16>New Match Time (UTC+7)			<color:#919192><size:16>x
+			.
+			<color:#ffffff><size:14> Day of week (0 = Sun, 1 = Mon, ..., 6 = Sat) <color:#e67270>*
+			[                                ]
+			.
+			<color:#ffffff><size:14> Hour <color:#e67270>*
+			[                                ]
+			.
+			<color:#ffffff><size:14> Minute <color:#e67270>*
+			[                                ]
+			.
+			/' . | <color:#899df3>Cancel  [<color:#5964f2>Submit] '/
+		}
 	}
 @endsalt
