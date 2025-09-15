@@ -35,26 +35,5 @@
 		{+
 			<b><color:#ffffff><size:16>✅ Successfully deleted schedule (event_name) for VNMC(year)!
 		}
-		.
-		= <color:#ffffff>Modal for POST and PUT
-		{+
-			<img:../logo.png>  <b><color:#ffffff><size:16>Select Event Start Date		<color:#919192><size:16>x
-			.
-			<color:#ffffff><size:14> Day <color:#e67270>*
-			[                                ]
-			.
-			<color:#ffffff><size:14> Month <color:#e67270>*
-			[                                ]
-		}
-		.
-		{+
-			<img:../logo.png>  <b><color:#ffffff><size:16>Select Event End Date		<color:#919192><size:16>x
-			.
-			<color:#ffffff><size:14> Day <color:#e67270>*
-			[                                ]
-			.
-			<color:#ffffff><size:14> Month <color:#e67270>*
-			[                                ]
-		}
 	}
 @endsalt
