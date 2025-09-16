@@ -14,14 +14,9 @@
 			<color:#ffffff><size:12>Snapshot generated • (snapshot_time)
 		}
 		.
-		= <color:#ffffff>✏️ PUT /reveal - Strip color <color:#77b255><size:16>#77b255 /' toggle ON '/
+		= <color:#ffffff>✏️ PUT /time - Strip color <color:#77b255><size:16>#77b255
 		{+
-			<b><color:#ffffff><size:16>✅ Qualifier results online!
-		}
-		.
-		= <color:#ffffff>✏️ PUT /reveal - Strip color <color:#77b255><size:16>#77b255 /' toggle OFF '/
-		{+
-			<b><color:#ffffff><size:16>✅ Qualifier results hidden!
+			<b><color:#ffffff><size:16>✅ Successfully updated stats reveal time to <back:#323336>EEEE, MMMM dd, yyyy h:mm a!
 		}
 	}
 @endsalt
