@@ -1,9 +1,3 @@
-InvalidRequestError:
-  description: Invalid Parameter or Body
-  content:
-    application/json:
-      schema:
-        $ref: './schemas.yaml#/Exception'
 NotFoundError:
   description: Resource Not Found
   content:
