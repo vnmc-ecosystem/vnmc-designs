@@ -6,7 +6,7 @@ MapId:
         type: object
         properties:
           map_id:
-            type: string
+            type: number
 Time:
   required: true
   content:
@@ -24,7 +24,7 @@ RefId:
         type: object
         properties:
           ref_id:
-            type: string
+            type: number
 NewTournament:
   required: true
   content:

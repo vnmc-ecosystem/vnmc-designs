@@ -47,7 +47,7 @@ Id:
   in: path
   required: true
   schema:
-    type: string
+    type: number
 Role: # add enum later on?
   name: role
   in: path

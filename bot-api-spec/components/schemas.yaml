@@ -394,7 +394,7 @@ Match:
     round:
       type: string
     match_id:
-      type: string
+      type: number
     player_1_name:
       type: string
     player_1_url:
@@ -430,7 +430,7 @@ Matches:
         type: object
         properties:
           match_id:
-            type: string
+            type: number
           player_1_name:
             type: string
           player_1_url:
@@ -473,7 +473,7 @@ MapMutation:
     code:
       type: string
     map_id:
-      type: string
+      type: number
 ScheduleCreateUpdate:
   type: object
   properties:
@@ -525,19 +525,19 @@ MatchRefUpdate:
   type: object
   properties:
     match_id:
-      type: string
+      type: number
     referee:
       type: string
 MatchRefDelete:
   type: object
   properties:
     match_id:
-      type: string
+      type: number
 MatchTimeUpdate:
   type: object
   properties:
     match_id:
-      type: string
+      type: number
     time:
       type: number
 MatchesUpdate:

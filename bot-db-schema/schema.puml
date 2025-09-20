@@ -118,7 +118,7 @@ package vnmc <<Database>> {
 	}
 
 	package beatmaps {
-		abstract beatmap_id as "_id" <<string>> #a9dcdf
+		abstract beatmap_id as "_id" <<int32>> #a9dcdf
 		abstract title <<string>>
 		abstract diff_name <<string>>
 		abstract banner_url <<string>>
@@ -132,7 +132,7 @@ package vnmc <<Database>> {
 	}
 
 	package users {
-		abstract user_id as "_id" <<string>> #a9dcdf
+		abstract user_id as "_id" <<int32>> #a9dcdf
 		abstract username <<string>>
 		abstract rank <<int32>>
 		abstract country_flag <<string>>
@@ -140,8 +140,8 @@ package vnmc <<Database>> {
 	}
 
 	package sessions {
-		abstract session_id as "_id" <<string>> #a9dcdf
-		abstract osu_id <<string>>
+		abstract session_id as "_id" <<int64>> #a9dcdf
+		abstract osu_id <<int32>>
 		abstract auth_time <<Date>>
 		note right of session_id : Discord ID
 	}
@@ -164,7 +164,7 @@ package vnmc <<Database>> {
 	}
 
 	package available_times {
-		abstract user_id_times as "_id" <<string>> #a9dcdf
+		abstract user_id_times as "_id" <<int32>> #a9dcdf
 		abstract time_slots <<TimeSlot[]>>
 		class TimeSlot {
 			from: <<int32>>
@@ -177,9 +177,9 @@ package vnmc <<Database>> {
 	}
 
 	/' foreign keys used by multiple fields '/
-	class MapId <<string>>
-	class MatchId <<string>>
-	class PlayerId <<string>>
+	class MapId <<int32>>
+	class MatchId <<int32>>
+	class PlayerId <<int32>>
 }
 
 registration_prop -[#add1b2]- PlayerId
