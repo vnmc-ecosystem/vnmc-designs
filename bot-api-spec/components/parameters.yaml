@@ -4,6 +4,7 @@ Year:
   required: true
   schema:
     type: number
+    minimum: 2025
 Round:
   name: round
   in: path
@@ -48,6 +49,7 @@ Id:
   required: true
   schema:
     type: number
+    minimum: 1
 Role: # add enum later on?
   name: role
   in: path
@@ -91,3 +93,4 @@ Limit:
   required: false
   schema:
     type: integer
+    minimum: 1

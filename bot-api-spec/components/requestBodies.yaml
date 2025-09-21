@@ -7,6 +7,7 @@ MapId:
         properties:
           map_id:
             type: number
+            minimum: 1
 Time:
   required: true
   content:
@@ -16,6 +17,7 @@ Time:
         properties:
           time:
             type: number
+            minimum: 0
 RefId:
   required: true
   content:
@@ -25,6 +27,7 @@ RefId:
         properties:
           ref_id:
             type: number
+            minimum: 1
 NewTournament:
   required: true
   content:
@@ -36,3 +39,4 @@ NewTournament:
             type: string
           top_cut:
             type: number
+            minimum: 2 # ! EXTRA - must be power of 2
