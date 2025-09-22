@@ -37,6 +37,7 @@ NewTournament:
         properties:
           abbr:
             type: string
+            maxLength: 10 # prevent injections
           top_cut:
             type: number
             minimum: 2 # ! EXTRA - must be power of 2
