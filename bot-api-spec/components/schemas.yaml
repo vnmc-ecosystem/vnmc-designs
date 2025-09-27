@@ -19,6 +19,8 @@ Mappool:
             type: string
           diff_name:
             type: string
+          pattern:
+            type: string
           url:
             type: string
 Map:
@@ -31,6 +33,8 @@ Map:
     round:
       type: string
     code:
+      type: string
+    pattern:
       type: string
     map:
       type: object
