@@ -478,6 +478,13 @@ MapMutation:
       type: string
     map_id:
       type: number
+MapDeletion:
+  type: object
+  properties:
+    round:
+      type: string
+    code:
+      type: string
 ScheduleCreateUpdate:
   type: object
   properties:

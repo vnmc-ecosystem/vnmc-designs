@@ -58,7 +58,7 @@ delete:
       content:
         application/json:
           schema:
-            $ref: '../../../../components/schemas.yaml#/MapMutation'
+            $ref: '../../../../components/schemas.yaml#/MapDeletion'
     '400':
       $ref: '../../../../components/responses.yaml#/InvalidRequestError'
     '404':
