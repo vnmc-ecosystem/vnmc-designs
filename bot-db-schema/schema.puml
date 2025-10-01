@@ -44,13 +44,14 @@ package vnmc <<Database>> {
 			"lore_builder"
 		}
 
-		abstract mappool <<Record<Round, Map[] | NonQualifierPool>>>
+		abstract mappool <<Record<Round, MapEntries | NonQualifierPool>>>
 		class Map {
 			id: <<MapId>>
 			pattern <<string>>
 		}
 		<> diamond1
-		class NonQualifierPool <<Record<Category, Map[]>>
+		class MapEntries <<Record<Index, Map>>>
+		class NonQualifierPool <<Record<Category, MapEntries>>
 		enum Round {
 			"qual"
 			"ro64"
@@ -69,6 +70,16 @@ package vnmc <<Database>> {
 			"EX"
 			"TB"
 		}
+		enum Index {
+			"1"
+			"2"
+			"3"
+			"4"
+			"5"
+			"6"
+			"7"
+		}
+		note right of Index : TB maps\ndefault to\nindex 1
 
 		abstract matches <<Record<Round, MatchId[] | NoBracketMatch | BracketMatch>>
 		<> diamond2
@@ -192,10 +203,12 @@ staff -[#add1b2]- PlayerId
 
 mappool -[#eb937f]- Round
 mappool -- diamond1
-diamond1 -[#add1b2]- Map : qual
+diamond1 -[#add1b2]- MapEntries : qual
 diamond1 -[#add1b2]- NonQualifierPool : non-qual
 NonQualifierPool -[#eb937f]- Category
-NonQualifierPool -[#add1b2]- Map
+NonQualifierPool -[#add1b2]- MapEntries
+MapEntries -[#eb937f]- Index
+MapEntries -[#add1b2]- Map
 Map::id -[#add1b2]- MapId
 
 matches -- diamond2
