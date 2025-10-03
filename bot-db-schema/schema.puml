@@ -183,6 +183,13 @@ package vnmc <<Database>> {
 		}
 	}
 
+	package map_limit {
+		abstract tournament_id_limit as "_id" <<int32>> #a9dcdf
+		abstract qual <<int32>>
+		abstract "<<Omit<Round, 'qual'>>>" <<Record<Category, int32>>>
+		note right of "<<Omit<Round, 'qual'>>>" : multiple\nof these
+	}
+
 	interface TTL {
 		value: 1 day
 	}
@@ -250,9 +257,15 @@ time_slots -[#add1b2]- TimeSlot
 
 
 
+"<<Omit<Round, 'qual'>>>" -[#eb937f]- Round
+"<<Omit<Round, 'qual'>>>" -[#eb937f]- Category
+
+
+
 MapId ..> beatmap_id
 PlayerId ..> user_id
 tournament_id ..> score_id
 PlayerId ..> user_id_times
+tournament_id ..> tournament_id_limit
 
 @enduml
