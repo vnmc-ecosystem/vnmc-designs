@@ -16,7 +16,7 @@ post:
     '500':
       $ref: '../../../components/responses.yaml#/InternalServerError'
   requestBody:
-    $ref: '../../../components/requestBodies.yaml#/Time'
+    $ref: '../../../components/requestBodies.yaml#/StartAndEndTime'
 put:
   summary: /schedule/:event
   responses:
@@ -33,7 +33,7 @@ put:
     '500':
       $ref: '../../../components/responses.yaml#/InternalServerError'
   requestBody:
-    $ref: '../../../components/requestBodies.yaml#/Time'
+    $ref: '../../../components/requestBodies.yaml#/StartAndEndTime'
 delete:
   summary: /schedule/:event
   responses:

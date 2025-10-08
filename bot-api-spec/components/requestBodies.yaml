@@ -18,6 +18,19 @@ Time:
           time:
             type: number
             minimum: 0
+StartAndEndTime:
+  required: true
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          start_time:
+            type: number
+            minimum: 0
+          end_time:
+            type: number
+            minimum: 0
 RefId:
   required: true
   content:
