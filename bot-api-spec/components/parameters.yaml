@@ -50,7 +50,7 @@ Id:
   schema:
     type: number
     minimum: 1
-Role: # add enum later on?
+Role: # ! missing some roles especially in VNMC2024 - need confirmation
   name: role
   in: path
   required: true

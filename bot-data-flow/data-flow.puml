@@ -1,0 +1,193 @@
+@startuml data-flow
+
+rectangle "POST    /tournament/:year" 	as POST_tournament			#ffffcc
+
+rectangle "GET     /mappool/:round" 	as GET_mappool_round		#ccffcc
+rectangle "POST    /mappool/:round" 	as POST_mappool_round		#ffffcc
+rectangle "DELETE  /mappool/:round" 	as DELETE_mappool_round	#ffcccc
+
+rectangle "GET     /map/:round/:code" 	as GET_map_round_code		#ccffcc
+rectangle "POST    /map/:round/:code" 	as POST_map_round_code		#ffffcc
+rectangle "PUT     /map/:round/:code" 	as PUT_map_round_code		#99ffff
+rectangle "DELETE  /map/:round/:code" 	as DELETE_map_round_cod	#ffcccc
+
+rectangle "GET     /schedule" 			as GET_schedule			#ccffcc
+rectangle "POST    /schedule/:event" 	as POST_schedule_event		#ffffcc
+rectangle "PUT     /schedule/:event" 	as PUT_schedule_event		#99ffff
+rectangle "DELETE  /schedule/:event" 	as DELETE_schedule_event	#ffcccc
+
+rectangle "GET     /standings" 			as GET_standings			#ccffcc
+
+rectangle "GET     /staff/:role" 		as GET_staff_role			#ccffcc
+rectangle "POST    /staff/:id/:role" 	as POST_staff_id_role		#ffffcc
+rectangle "PUT     /staff/:id/:role" 	as PUT_staff_id_role		#99ffff
+rectangle "DELETE  /staff/:id/:role" 	as DELETE_staff_id_role	#ffcccc
+
+rectangle "GET     /player" 			as GET_player				#ccffcc
+rectangle "POST    /player" 			as POST_player				#ffffcc
+rectangle "DELETE  /player" 			as DELETE_player			#ffcccc
+
+rectangle "GET     /match/:id" 			as GET_match_id			#ccffcc
+rectangle "PUT     /match/:id/ref" 		as PUT_match_id_ref		#99ffff
+rectangle "DELETE  /match/:id/ref" 		as DELETE_match_id_ref		#ffcccc
+rectangle "PUT     /match/:id/time" 	as PUT_match_id_time		#99ffff
+
+rectangle "GET     /matches/:round" 	as GET_matches_round		#ccffcc
+rectangle "PUT     /matches" 			as PUT_matches				#99ffff
+
+rectangle "GET     /stats/:round" 		as GET_stats_round			#ccffcc
+rectangle "PUT     /stats/reveal" 		as PUT_stats_reveal		#99ffff
+
+
+
+
+
+
+json staff_params1 {
+	"role": "string"
+}
+
+json staff_params2 {
+	"role?": "string"
+}
+
+json staff_params3 {
+	"old_role": "string",
+	"new_role": "string"
+}
+
+json player_params {
+	"name?": "string",
+	"sort?": "string",
+	"limit?": "number"
+}
+
+json matches_mappool_stats_params {
+	"round": "string"
+}
+
+json schedule_params {
+	"event": "string"
+}
+
+json tournament_params {
+	"abbreviation": "string",
+	"top_cut": "number"
+}
+
+json match_params1 {
+	"match_id": "number"
+}
+
+json match_params2 {
+	"match_id": "number",
+	"ref_id": "string"
+}
+
+json map_params1 {
+	"round": "string",
+	"map_code": "string"
+}
+
+json map_params2 {
+	"round": "string",
+	"map_code": "string",
+	"map_id": "string"
+}
+
+json map_params3 {
+	"round": "string",
+	"map_code": "string",
+	"new_map_id": "string"
+}
+
+
+
+
+
+
+database vnmc {
+	package tournaments {
+		[tournament_id] as "_id" #a9dcdf
+		[year]
+		[registration]
+		[schedules]
+		[staff]
+		[mappool]
+		[matches]
+		[standings]
+		[qual_stats_hidden]
+		[seed_count]
+	}
+	package beatmaps {
+		[beatmap_id] as "_id" #a9dcdf
+		[title]
+		[diff_name]
+		[banner_url]
+		[artist]
+		[sr]
+		[bpm]
+		[od]
+		[hp]
+		[drain_time]
+		[map_fetch_time] as "fetch_time"
+	}
+	package users {
+		[user_id] as "_id" #a9dcdf
+		[username]
+		[rank]
+		[user_fetch_time] as "fetch_time"
+	}
+	package sessions {
+		[session_id] as "_id" #a9dcdf
+		[auth_time]
+	}
+	package scores {
+		[score_id] as "_id" #a9dcdf
+		[score_list]
+	}
+}
+
+
+
+
+
+
+GET_staff_role ..> staff_params2
+POST_staff_id_role ..> staff_params1
+PUT_staff_id_role ..> staff_params3
+DELETE_staff_id_role ..> staff_params1
+
+GET_player ..> player_params
+
+GET_match_id ..> match_params1
+PUT_match_id_ref ..> match_params2
+DELETE_match_id_ref ..> match_params1
+PUT_match_id_time ..> match_params1
+
+GET_matches_round ..> matches_mappool_stats_params
+
+GET_mappool_round ..> matches_mappool_stats_params
+POST_mappool_round ..> matches_mappool_stats_params
+DELETE_mappool_round ..> matches_mappool_stats_params
+
+GET_map_round_code ..> map_params1
+POST_map_round_code ..> map_params2
+PUT_map_round_code ..> map_params3
+DELETE_map_round_cod ..> map_params1
+
+POST_schedule_event ..> schedule_params
+PUT_schedule_event ..> schedule_params
+DELETE_schedule_event ..> schedule_params
+
+POST_tournament ..> tournament_params
+
+GET_stats_round ..> matches_mappool_stats_params
+
+
+
+matches_mappool_stats_params --> matches_mappool_stats_params
+matches_mappool_stats_params --> matches_mappool_stats_params
+matches_mappool_stats_params --> matches_mappool_stats_params
+
+@enduml
